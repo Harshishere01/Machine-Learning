@@ -1,0 +1,10 @@
+# Wheat Yield Prediction Project
+
+## Future Wheat Yield Predictions
+
+| Year | Linear Prediction (kg/ha) | Polynomial Prediction (kg/ha) |
+| :--- | :------------------------ | :---------------------------- |
+| 2027 | 3748.337713               | 3632.491727                   |
+| 2028 | 3793.373906               | 3667.976425                   |
+| 2029 | 3838.410098               | 3703.188223                   |
+| 2030 | 3883.446291               | 3738.127122                   |
