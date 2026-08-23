@@ -1,0 +1,297 @@
+# ==========================================
+# WHEAT YIELD PREDICTION USING MACHINE LEARNING
+# Data: India Wheat Yield (1961-2024)
+# ==========================================
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import PolynomialFeatures
+from sklearn.metrics import (
+    mean_squared_error,
+    mean_absolute_error,
+    r2_score
+)
+
+# ------------------------------------------
+# 1. LOAD THE DATASET
+# ------------------------------------------
+
+file_path = "FAOSTAT_data_en_8-23-2026.csv"
+
+df = pd.read_csv(file_path)
+
+# Display first 5 rows
+print("First 5 rows:")
+print(df.head())
+
+# ------------------------------------------
+# 2. SELECT REQUIRED COLUMNS
+# ------------------------------------------
+
+data = df[["Year", "Value"]].copy()
+
+# Rename Value column to Yield
+data.rename(columns={"Value": "Yield"}, inplace=True)
+
+# Sort data according to year
+data = data.sort_values("Year")
+
+print("\nDataset:")
+print(data.head())
+
+print("\nTotal records:", len(data))
+
+# ------------------------------------------
+# 3. DEFINE FEATURES AND TARGET
+# ------------------------------------------
+
+X = data[["Year"]]
+y = data["Yield"]
+
+# ------------------------------------------
+# 4. SPLIT DATA INTO TRAINING AND TESTING SET
+# ------------------------------------------
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X,
+    y,
+    test_size=0.20,
+    random_state=42
+)
+
+# ==========================================
+# LINEAR REGRESSION
+# ==========================================
+
+linear_model = LinearRegression()
+
+# Train the model
+linear_model.fit(X_train, y_train)
+
+# Predict test data
+y_pred_linear = linear_model.predict(X_test)
+
+# ------------------------------------------
+# 5. LINEAR REGRESSION METRICS
+# ------------------------------------------
+
+mse_linear = mean_squared_error(y_test, y_pred_linear)
+rmse_linear = np.sqrt(mse_linear)
+mae_linear = mean_absolute_error(y_test, y_pred_linear)
+r2_linear = r2_score(y_test, y_pred_linear)
+
+print("\n====================================")
+print("LINEAR REGRESSION RESULTS")
+print("====================================")
+
+print("MSE  :", mse_linear)
+print("RMSE :", rmse_linear)
+print("MAE  :", mae_linear)
+print("R²   :", r2_linear)
+
+# Linear Equation
+print("\nLinear Regression Equation:")
+print(
+    f"Yield = {linear_model.coef_[0]:.6f} * Year "
+    f"+ ({linear_model.intercept_:.6f})"
+)
+
+# ==========================================
+# POLYNOMIAL REGRESSION - DEGREE 2
+# ==========================================
+
+poly = PolynomialFeatures(degree=2, include_bias=False)
+
+# Convert Year into Year and Year²
+X_train_poly = poly.fit_transform(X_train)
+X_test_poly = poly.transform(X_test)
+
+# Create model
+poly_model = LinearRegression()
+
+# Train polynomial model
+poly_model.fit(X_train_poly, y_train)
+
+# Predictions
+y_pred_poly = poly_model.predict(X_test_poly)
+
+# ------------------------------------------
+# 6. POLYNOMIAL REGRESSION METRICS
+# ------------------------------------------
+
+mse_poly = mean_squared_error(y_test, y_pred_poly)
+rmse_poly = np.sqrt(mse_poly)
+mae_poly = mean_absolute_error(y_test, y_pred_poly)
+r2_poly = r2_score(y_test, y_pred_poly)
+
+print("\n====================================")
+print("POLYNOMIAL REGRESSION RESULTS")
+print("====================================")
+
+print("MSE  :", mse_poly)
+print("RMSE :", rmse_poly)
+print("MAE  :", mae_poly)
+print("R²   :", r2_poly)
+
+# Polynomial equation
+print("\nPolynomial Regression Equation:")
+
+print(
+    f"Yield = {poly_model.intercept_:.6f} "
+    f"+ ({poly_model.coef_[0]:.6f} * Year) "
+    f"+ ({poly_model.coef_[1]:.10f} * Year²)"
+)
+
+# ==========================================
+# 7. TRAIN FINAL MODELS ON COMPLETE DATA
+# ==========================================
+
+# Train Linear model using all data
+final_linear_model = LinearRegression()
+final_linear_model.fit(X, y)
+
+# Train Polynomial model using all data
+final_poly = PolynomialFeatures(degree=2, include_bias=False)
+
+X_all_poly = final_poly.fit_transform(X)
+
+final_poly_model = LinearRegression()
+final_poly_model.fit(X_all_poly, y)
+
+# ==========================================
+# 8. PREDICT FUTURE YEARS
+# ==========================================
+
+future_years = pd.DataFrame({
+    "Year": [2027, 2028, 2029, 2030]
+})
+
+# Linear predictions
+linear_predictions = final_linear_model.predict(future_years)
+
+# Polynomial predictions
+future_poly = final_poly.transform(future_years)
+
+polynomial_predictions = final_poly_model.predict(
+    future_poly
+)
+
+# Create result dataframe
+future_results = pd.DataFrame({
+    "Year": future_years["Year"],
+    "Linear Prediction (kg/ha)": linear_predictions,
+    "Polynomial Prediction (kg/ha)": polynomial_predictions
+})
+
+print("\n====================================")
+print("FUTURE WHEAT YIELD PREDICTIONS")
+print("====================================")
+
+print(future_results)
+
+# ==========================================
+# 9. FINAL EQUATIONS USING ALL DATA
+# ==========================================
+
+print("\n====================================")
+print("FINAL EQUATIONS")
+print("====================================")
+
+print("\nFinal Linear Equation:")
+
+print(
+    f"Yield = {final_linear_model.coef_[0]:.6f} * Year "
+    f"+ ({final_linear_model.intercept_:.6f})"
+)
+
+print("\nFinal Polynomial Equation:")
+
+print(
+    f"Yield = {final_poly_model.intercept_:.6f} "
+    f"+ ({final_poly_model.coef_[0]:.6f} * Year) "
+    f"+ ({final_poly_model.coef_[1]:.10f} * Year²)"
+)
+
+# ==========================================
+# 10. CREATE GRAPH
+# ==========================================
+
+# Years for smooth regression lines
+all_years = np.arange(
+    data["Year"].min(),
+    2031
+).reshape(-1, 1)
+
+# Linear line
+linear_line = final_linear_model.predict(all_years)
+
+# Polynomial line
+all_years_poly = final_poly.transform(all_years)
+
+polynomial_line = final_poly_model.predict(
+    all_years_poly
+)
+
+# Create graph
+plt.figure(figsize=(14, 8))
+
+# Actual historical data
+plt.plot(
+    data["Year"],
+    data["Yield"],
+    marker="o",
+    label="Actual Wheat Yield"
+)
+
+# Linear regression line
+plt.plot(
+    all_years.flatten(),
+    linear_line,
+    label="Linear Regression"
+)
+
+# Polynomial regression line
+plt.plot(
+    all_years.flatten(),
+    polynomial_line,
+    label="Polynomial Regression (Degree 2)"
+)
+
+# Future predictions
+plt.scatter(
+    future_years["Year"],
+    polynomial_predictions,
+    marker="x",
+    s=150,
+    label="Predicted Yield (2027-2030)"
+)
+
+plt.xlabel("Year")
+plt.ylabel("Wheat Yield (kg/ha)")
+plt.title(
+    "India Wheat Yield Prediction Using Machine Learning"
+)
+
+plt.legend()
+plt.grid(True, alpha=0.3)
+
+plt.tight_layout()
+plt.show()
+
+# ==========================================
+# 11. SAVE PREDICTIONS TO CSV
+# ==========================================
+
+future_results.to_csv(
+    "wheat_yield_predictions_2027_2030.csv",
+    index=False
+)
+
+print(
+    "\nPredictions saved successfully "
+    "as wheat_yield_predictions_2027_2030.csv"
+)
