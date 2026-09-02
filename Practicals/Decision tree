@@ -93,6 +93,9 @@ plot_tree(
 plt.title("Decision Tree - Play Tennis")
 plt.show()
 
+```
+
+
 
 
 
