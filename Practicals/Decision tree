@@ -1,0 +1,98 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+from sklearn.preprocessing import LabelEncoder
+from sklearn.tree import DecisionTreeClassifier, plot_tree
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
+
+# Create dataset
+data = {
+    'Outlook': [
+        'Sunny', 'Sunny', 'Overcast', 'Rain',
+        'Rain', 'Rain', 'Overcast', 'Sunny',
+        'Sunny', 'Rain', 'Sunny', 'Overcast',
+        'Overcast', 'Rain'
+    ],
+
+    'Temperature': [
+        'Hot', 'Hot', 'Hot', 'Mild',
+        'Cool', 'Cool', 'Cool', 'Mild',
+        'Cool', 'Mild', 'Mild', 'Mild',
+        'Hot', 'Mild'
+    ],
+
+    'Humidity': [
+        'High', 'High', 'High', 'High',
+        'Normal', 'Normal', 'Normal', 'High',
+        'Normal', 'Normal', 'Normal', 'High',
+        'Normal', 'High'
+    ],
+
+    'Wind': [
+        'Weak', 'Strong', 'Weak', 'Weak',
+        'Weak', 'Strong', 'Strong', 'Weak',
+        'Weak', 'Weak', 'Strong', 'Strong',
+        'Weak', 'Strong'
+    ],
+
+    'PlayTennis': [
+        'No', 'No', 'Yes', 'Yes',
+        'Yes', 'No', 'Yes', 'No',
+        'Yes', 'Yes', 'Yes', 'Yes',
+        'Yes', 'No'
+    ]
+}
+
+df = pd.DataFrame(data)
+
+print("Dataset:")
+print(df)
+
+# Encode categorical values
+le = LabelEncoder()
+
+for column in df.columns:
+    df[column] = le.fit_transform(df[column])
+
+# Separate features and target
+X = df.drop('PlayTennis', axis=1)
+y = df['PlayTennis']
+
+# Create Decision Tree
+model = DecisionTreeClassifier(
+    criterion='entropy',
+    random_state=42
+)
+
+# Train model
+model.fit(X, y)
+
+# Predictions
+y_pred = model.predict(X)
+
+# Accuracy
+accuracy = accuracy_score(y, y_pred)
+
+print("\nAccuracy:", accuracy)
+
+# Confusion Matrix
+print("\nConfusion Matrix:")
+print(confusion_matrix(y, y_pred))
+
+# Decision Tree
+plt.figure(figsize=(14, 8))
+
+plot_tree(
+    model,
+    feature_names=X.columns,
+    class_names=['No', 'Yes'],
+    filled=True
+)
+
+plt.title("Decision Tree - Play Tennis")
+plt.show()
+
+
+
+
