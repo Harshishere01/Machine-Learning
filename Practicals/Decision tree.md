@@ -1,3 +1,4 @@
+```
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -94,7 +95,10 @@ plt.title("Decision Tree - Play Tennis")
 plt.show()
 
 ```
+## OUTPUT-
+<img width="1074" height="421" alt="Image" src="https://github.com/user-attachments/assets/74598db8-08b1-40a9-954d-5487c88aa7fc" />
 
+<img width="1400" height="800" alt="Image" src="https://github.com/user-attachments/assets/e51a926c-e90c-4306-aabf-87dae1eecb61" />
 
 
 
