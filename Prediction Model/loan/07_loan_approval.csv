@@ -1,0 +1,601 @@
+ApplicantID,Age,AnnualIncome,LoanAmount,CreditScore,EmploymentYears,Education,MaritalStatus,PropertyArea,SelfEmployed,LoanApproved
+L0001,25,35200,30000,703,7.4,Graduate,Married,Rural,No,Y
+L0002,55,38300,133000,712,2.1,Graduate,Married,Urban,No,N
+L0003,50,35800,95000,678,10.9,Graduate,Married,Semiurban,Yes,Y
+L0004,40,43000,103000,694,5.2,Graduate,Married,Semiurban,No,N
+L0005,40,77800,84000,728,3.4,Not Graduate,Divorced,Urban,No,N
+L0006,59,12600,17000,609,6.4,Graduate,Married,Rural,No,N
+L0007,24,36100,38000,735,6.2,Not Graduate,Married,Urban,No,Y
+L0008,52,43500,151000,567,6.0,Graduate,Married,Urban,Yes,N
+L0009,30,45900,117000,694,10.0,Graduate,Married,Rural,No,Y
+L0010,25,33900,104000,683,6.7,Graduate,Married,Urban,Yes,Y
+L0011,44,18200,28000,623,3.2,Graduate,Married,Rural,No,N
+L0012,64,46500,84000,668,4.5,Not Graduate,Married,Urban,Yes,N
+L0013,54,87300,167000,623,13.5,Graduate,Married,Semiurban,No,N
+L0014,55,20100,64000,589,2.9,Not Graduate,Single,Urban,No,N
+L0015,53,59200,190000,643,7.4,Graduate,Married,Semiurban,No,N
+L0016,56,34600,42000,587,10.2,Not Graduate,Married,Rural,No,N
+L0017,44,39000,148000,694,7.9,Not Graduate,Single,Rural,Yes,N
+L0018,26,25000,23000,583,5.9,Graduate,Married,Rural,No,N
+L0019,58,34500,125000,723,6.5,Graduate,Married,Semiurban,Yes,Y
+L0020,41,72000,61000,581,8.2,Graduate,Married,Rural,No,N
+L0021,43,52200,74000,627,2.9,Graduate,Married,Semiurban,Yes,N
+L0022,37,87500,303000,623,5.5,Not Graduate,Married,Rural,No,N
+L0023,29,68200,77000,769,20.4,Graduate,Divorced,Semiurban,No,Y
+L0024,62,48900,95000,694,7.5,Graduate,Divorced,Rural,No,Y
+L0025,56,88000,183000,654,6.0,Graduate,Divorced,Urban,No,N
+L0026,49,48900,66000,707,4.2,Graduate,Married,Semiurban,No,Y
+L0027,39,58300,174000,511,2.9,Not Graduate,Married,Semiurban,Yes,N
+L0028,58,35100,122000,666,6.7,Graduate,Married,Urban,No,Y
+L0029,45,41400,147000,819,7.0,Not Graduate,Married,Urban,No,N
+L0030,40,29300,49000,679,5.2,Not Graduate,Married,Rural,No,N
+L0031,41,62600,148000,675,25.6,Graduate,Married,Semiurban,No,Y
+L0032,31,23600,32000,711,3.1,Graduate,Married,Urban,No,N
+L0033,25,57100,77000,737,2.6,Graduate,Married,Urban,No,Y
+L0034,45,36800,39000,520,4.2,Graduate,Married,Semiurban,No,N
+L0035,60,68000,258000,543,5.3,Graduate,Single,Semiurban,No,N
+L0036,23,56300,203000,685,2.8,Not Graduate,Married,Rural,No,N
+L0037,59,91100,293000,616,6.6,Graduate,Single,Rural,No,N
+L0038,58,55800,129000,768,7.1,Not Graduate,Married,Semiurban,No,Y
+L0039,33,19800,44000,646,8.9,Not Graduate,Married,Semiurban,No,N
+L0040,49,38900,92000,524,3.7,Not Graduate,Married,Urban,Yes,N
+L0041,28,23700,56000,574,12.8,Graduate,Married,Rural,Yes,N
+L0042,55,31800,64000,463,8.5,Graduate,Married,Urban,No,N
+L0043,52,79200,76000,652,3.1,Graduate,Married,Urban,Yes,Y
+L0044,36,53500,50000,655,2.8,Graduate,Single,Rural,Yes,N
+L0045,24,29300,112000,638,4.5,Graduate,Married,Rural,No,N
+L0046,64,25400,56000,750,7.1,Graduate,Married,Urban,No,Y
+L0047,41,40700,156000,759,7.8,Graduate,Divorced,Semiurban,No,N
+L0048,61,23200,25000,657,8.5,Graduate,Married,Semiurban,No,Y
+L0049,51,29700,72000,509,19.6,Graduate,Single,Urban,No,N
+L0050,56,46200,57000,716,1.1,Graduate,Married,Urban,No,Y
+L0051,55,67500,94000,711,5.1,Graduate,Married,Urban,No,Y
+L0052,29,52800,32000,693,18.5,Not Graduate,Married,Semiurban,Yes,Y
+L0053,37,14300,13000,743,9.1,Graduate,Married,Semiurban,No,Y
+L0054,42,46000,171000,582,2.4,Not Graduate,Single,Semiurban,Yes,N
+L0055,43,41500,67000,820,6.3,Not Graduate,Married,Urban,Yes,Y
+L0056,22,48400,127000,598,4.9,Graduate,Married,Rural,No,N
+L0057,45,83100,177000,726,4.8,Graduate,Married,Semiurban,Yes,N
+L0058,27,15900,30000,543,3.7,Graduate,Divorced,Rural,Yes,N
+L0059,54,30800,73000,600,6.0,Graduate,Single,Urban,No,N
+L0060,51,52400,61000,783,11.3,Graduate,Divorced,Semiurban,No,Y
+L0061,62,19700,78000,650,3.9,Graduate,Single,Rural,Yes,N
+L0062,54,78000,262000,732,8.5,Not Graduate,Single,Urban,Yes,Y
+L0063,37,47400,147000,687,9.5,Not Graduate,Married,Urban,No,N
+L0064,64,58700,126000,662,12.7,Not Graduate,Divorced,Urban,No,N
+L0065,39,31000,32000,772,2.7,Graduate,Married,Urban,No,Y
+L0066,35,57900,216000,652,5.6,Graduate,Married,Semiurban,No,N
+L0067,61,64900,110000,536,3.3,Not Graduate,Single,Urban,No,N
+L0068,37,44600,30000,609,6.0,Graduate,Married,Urban,No,N
+L0069,24,44600,76000,711,6.0,Graduate,Married,Semiurban,No,Y
+L0070,42,45300,149000,699,2.2,Graduate,Married,Urban,No,Y
+L0071,56,27200,73000,552,6.2,Graduate,Married,Urban,No,N
+L0072,29,37600,118000,615,20.2,Graduate,Single,Semiurban,Yes,N
+L0073,41,37500,123000,626,7.8,Graduate,Married,Urban,No,N
+L0074,26,47700,59000,642,1.8,Graduate,Single,Urban,No,Y
+L0075,51,62900,235000,566,2.6,Graduate,Married,Urban,Yes,N
+L0076,42,24900,51000,622,5.4,Graduate,Single,Urban,No,N
+L0077,35,37900,104000,615,2.7,Graduate,Married,Semiurban,No,N
+L0078,31,78200,40000,727,12.3,Graduate,Divorced,Urban,No,Y
+L0079,46,28700,114000,730,1.6,Not Graduate,Married,Urban,No,N
+L0080,51,27700,41000,659,7.9,Graduate,Married,Rural,No,N
+L0081,63,44000,32000,640,1.3,Graduate,Married,Rural,No,N
+L0082,40,58700,123000,680,5.4,Not Graduate,Married,Urban,No,Y
+L0083,28,40300,38000,608,2.3,Graduate,Married,Urban,Yes,Y
+L0084,58,73000,75000,583,8.8,Not Graduate,Single,Semiurban,No,N
+L0085,49,59000,160000,599,11.0,Graduate,Divorced,Rural,No,N
+L0086,52,58600,110000,622,7.1,Graduate,Single,Rural,Yes,N
+L0087,25,51500,192000,582,11.3,Graduate,Married,Urban,No,Y
+L0088,35,114400,185000,682,0.4,Graduate,Married,Urban,No,Y
+L0089,55,36600,111000,724,6.2,Not Graduate,Single,Semiurban,No,Y
+L0090,58,16300,34000,550,7.8,Not Graduate,Single,Rural,No,N
+L0091,40,82600,232000,671,8.5,Not Graduate,Married,Rural,No,N
+L0092,57,32700,85000,653,7.5,Not Graduate,Divorced,Urban,No,N
+L0093,58,42100,91000,695,8.6,Graduate,Married,Semiurban,No,Y
+L0094,38,72400,277000,669,6.1,Not Graduate,Single,Urban,No,N
+L0095,61,19500,33000,560,1.8,Graduate,Divorced,Semiurban,No,N
+L0096,33,22900,26000,575,3.6,Not Graduate,Single,Rural,No,Y
+L0097,31,19500,56000,672,12.3,Graduate,Married,Semiurban,Yes,N
+L0098,51,28100,97000,747,11.5,Graduate,Single,Urban,No,N
+L0099,49,48900,31000,503,7.7,Not Graduate,Married,Semiurban,No,N
+L0100,27,50800,105000,695,9.0,Not Graduate,Single,Semiurban,Yes,Y
+L0101,58,45400,165000,759,10.6,Graduate,Married,Rural,No,N
+L0102,29,21300,67000,658,7.6,Graduate,Single,Urban,No,N
+L0103,57,14200,56000,711,12.1,Graduate,Divorced,Rural,No,Y
+L0104,21,41100,97000,617,11.9,Not Graduate,Married,Urban,No,Y
+L0105,56,32500,91000,661,24.1,Graduate,Married,Urban,No,Y
+L0106,56,49400,77000,548,3.8,Graduate,Single,Urban,No,N
+L0107,56,55000,210000,494,3.8,Graduate,Married,Urban,No,N
+L0108,50,42700,76000,740,7.3,Graduate,Married,Urban,No,Y
+L0109,42,56500,174000,596,17.9,Graduate,Married,Semiurban,No,Y
+L0110,52,44500,85000,635,12.7,Graduate,Married,Urban,No,Y
+L0111,33,50900,126000,566,9.7,Not Graduate,Single,Urban,No,N
+L0112,56,29200,88000,564,13.3,Not Graduate,Single,Urban,No,N
+L0113,46,37000,84000,656,7.9,Not Graduate,Married,Urban,No,N
+L0114,41,43900,161000,615,4.5,Graduate,Married,Rural,No,N
+L0115,43,58100,114000,698,20.7,Graduate,Married,Rural,No,Y
+L0116,46,33600,93000,703,7.5,Graduate,Married,Urban,No,Y
+L0117,22,50700,86000,694,11.7,Not Graduate,Single,Rural,No,N
+L0118,27,35600,69000,687,0.4,Graduate,Married,Semiurban,No,N
+L0119,32,38100,78000,788,0.5,Graduate,Married,Rural,No,Y
+L0120,26,58300,55000,589,6.3,Not Graduate,Divorced,Urban,Yes,Y
+L0121,40,16400,13000,665,2.7,Graduate,Married,Urban,No,Y
+L0122,51,22400,64000,754,6.7,Not Graduate,Single,Semiurban,No,Y
+L0123,50,20600,58000,764,3.8,Graduate,Married,Rural,No,N
+L0124,42,14000,39000,563,26.3,Graduate,Married,Semiurban,No,Y
+L0125,59,29600,17000,646,11.1,Graduate,Married,Semiurban,No,N
+L0126,46,56200,92000,771,14.1,Graduate,Single,Urban,No,Y
+L0127,24,35300,42000,708,0.7,Not Graduate,Single,Semiurban,No,Y
+L0128,55,43900,142000,684,9.6,Graduate,Married,Rural,No,N
+L0129,46,65500,230000,653,4.9,Graduate,Married,Semiurban,No,Y
+L0130,49,72900,99000,641,14.3,Not Graduate,Married,Semiurban,No,N
+L0131,46,38900,110000,691,8.7,Graduate,Single,Semiurban,No,Y
+L0132,45,73800,70000,651,5.4,Not Graduate,Single,Semiurban,No,N
+L0133,25,41800,61000,666,2.0,Graduate,Single,Semiurban,No,Y
+L0134,46,27500,27000,675,6.2,Not Graduate,Divorced,Rural,Yes,Y
+L0135,56,30700,46000,619,12.2,Graduate,Married,Rural,No,N
+L0136,34,20600,59000,709,14.8,Graduate,Single,Semiurban,No,Y
+L0137,48,26900,99000,850,4.3,Graduate,Single,Urban,No,Y
+L0138,22,34200,41000,536,23.7,Graduate,Married,Urban,No,N
+L0139,36,57600,138000,694,11.6,Graduate,Divorced,Urban,Yes,Y
+L0140,40,87100,257000,612,2.7,Graduate,Married,Urban,No,N
+L0141,65,21500,82000,713,2.2,Graduate,Single,Urban,No,N
+L0142,30,47900,126000,673,5.1,Not Graduate,Single,Semiurban,No,N
+L0143,33,25100,35000,727,4.3,Graduate,Divorced,Urban,No,Y
+L0144,39,49700,134000,758,7.9,Graduate,Married,Urban,No,Y
+L0145,65,37800,61000,684,5.8,Not Graduate,Married,Rural,No,N
+L0146,59,17600,69000,754,4.6,Graduate,Single,Urban,No,Y
+L0147,22,60900,116000,494,1.4,Not Graduate,Single,Semiurban,No,N
+L0148,31,30600,89000,789,8.9,Not Graduate,Married,Rural,No,Y
+L0149,57,31600,18000,698,1.3,Not Graduate,Single,Semiurban,No,Y
+L0150,23,24800,47000,750,11.6,Not Graduate,Married,Urban,No,Y
+L0151,59,29900,107000,578,0.8,Graduate,Single,Urban,Yes,N
+L0152,33,48700,128000,607,1.2,Graduate,Single,Semiurban,No,N
+L0153,62,36900,76000,680,2.7,Graduate,Married,Semiurban,No,N
+L0154,34,46500,176000,668,4.0,Not Graduate,Married,Urban,No,N
+L0155,40,47200,165000,691,3.4,Graduate,Divorced,Semiurban,Yes,N
+L0156,50,72700,118000,751,4.0,Not Graduate,Single,Semiurban,No,Y
+L0157,26,34400,83000,537,6.8,Graduate,Single,Urban,No,N
+L0158,46,20600,46000,743,2.7,Graduate,Married,Semiurban,Yes,Y
+L0159,43,64900,176000,670,6.9,Graduate,Divorced,Urban,Yes,N
+L0160,56,34600,58000,654,0.4,Graduate,Married,Urban,Yes,Y
+L0161,65,66300,90000,559,2.7,Graduate,Married,Rural,No,N
+L0162,50,47700,176000,707,1.1,Graduate,Married,Urban,No,N
+L0163,39,37800,141000,488,11.5,Not Graduate,Single,Semiurban,No,N
+L0164,39,47000,162000,718,3.1,Graduate,Divorced,Semiurban,No,Y
+L0165,39,96600,379000,558,8.5,Graduate,Single,Urban,No,N
+L0166,57,102200,318000,674,0.9,Graduate,Single,Rural,No,N
+L0167,35,41400,132000,661,14.7,Graduate,Married,Urban,No,Y
+L0168,28,43100,137000,757,6.0,Graduate,Married,Urban,No,Y
+L0169,36,65100,142000,656,5.5,Graduate,Married,Rural,No,Y
+L0170,22,27400,57000,617,1.4,Not Graduate,Married,Semiurban,No,N
+L0171,25,46600,62000,632,2.4,Graduate,Married,Semiurban,No,Y
+L0172,25,39700,109000,765,4.7,Graduate,Single,Urban,No,Y
+L0173,55,46200,70000,710,2.5,Graduate,Single,Urban,No,Y
+L0174,53,27600,39000,641,10.8,Graduate,Single,Semiurban,No,N
+L0175,52,19600,50000,652,5.9,Not Graduate,Married,Urban,No,N
+L0176,41,15800,31000,552,2.5,Graduate,Married,Urban,Yes,N
+L0177,53,24300,31000,699,9.7,Not Graduate,Married,Rural,No,Y
+L0178,28,32600,109000,538,4.2,Graduate,Married,Urban,No,N
+L0179,61,35200,124000,726,9.4,Graduate,Married,Urban,No,Y
+L0180,43,96000,104000,679,3.7,Graduate,Married,Urban,Yes,Y
+L0181,63,66000,35000,849,8.1,Graduate,Married,Semiurban,No,Y
+L0182,27,26000,44000,587,4.1,Not Graduate,Single,Semiurban,No,N
+L0183,43,46900,154000,662,10.8,Graduate,Married,Rural,No,N
+L0184,52,33400,115000,804,0.9,Not Graduate,Married,Urban,No,N
+L0185,43,35300,35000,759,1.9,Not Graduate,Married,Urban,No,Y
+L0186,41,43600,140000,617,5.0,Graduate,Married,Semiurban,No,N
+L0187,28,53000,48000,686,3.2,Graduate,Married,Urban,No,Y
+L0188,38,34500,64000,670,4.0,Graduate,Married,Semiurban,No,Y
+L0189,31,64800,259000,691,8.8,Graduate,Single,Rural,No,N
+L0190,34,24000,28000,617,3.9,Not Graduate,Married,Semiurban,No,N
+L0191,51,40200,42000,663,7.1,Graduate,Divorced,Semiurban,No,Y
+L0192,49,129200,256000,550,2.6,Not Graduate,Married,Rural,No,N
+L0193,48,44400,118000,680,0.7,Graduate,Married,Urban,No,N
+L0194,37,76500,288000,703,9.3,Graduate,Married,Rural,No,N
+L0195,64,41800,164000,652,16.8,Graduate,Married,Semiurban,No,Y
+L0196,24,52100,39000,548,6.5,Graduate,Married,Semiurban,Yes,Y
+L0197,36,39100,38000,744,5.2,Not Graduate,Single,Rural,Yes,Y
+L0198,26,37200,122000,697,6.1,Graduate,Married,Semiurban,No,Y
+L0199,36,28300,41000,615,13.4,Not Graduate,Single,Semiurban,No,N
+L0200,64,48700,175000,648,6.6,Not Graduate,Married,Urban,No,N
+L0201,37,27400,77000,557,9.7,Not Graduate,Married,Semiurban,No,N
+L0202,61,54200,48000,593,9.4,Graduate,Married,Semiurban,No,Y
+L0203,43,65400,223000,629,11.4,Not Graduate,Married,Urban,No,N
+L0204,52,47300,53000,762,5.1,Graduate,Married,Semiurban,No,Y
+L0205,41,35300,70000,622,3.6,Not Graduate,Divorced,Semiurban,Yes,N
+L0206,32,49200,120000,718,8.2,Graduate,Single,Semiurban,No,Y
+L0207,55,34900,79000,629,10.8,Graduate,Divorced,Urban,Yes,N
+L0208,64,61100,177000,688,12.2,Graduate,Married,Semiurban,No,N
+L0209,32,17600,49000,659,14.4,Graduate,Single,Urban,No,N
+L0210,56,34500,137000,735,10.2,Graduate,Single,Urban,No,Y
+L0211,32,16400,66000,629,3.5,Not Graduate,Single,Semiurban,No,N
+L0212,53,20500,47000,552,6.5,Graduate,Divorced,Urban,No,N
+L0213,56,74100,62000,566,6.1,Not Graduate,Single,Urban,No,Y
+L0214,41,60000,183000,630,5.6,Graduate,Single,Semiurban,No,N
+L0215,54,29000,114000,576,8.2,Not Graduate,Single,Urban,No,N
+L0216,33,20400,33000,700,4.8,Not Graduate,Married,Rural,No,N
+L0217,24,10600,22000,635,4.8,Graduate,Single,Rural,No,N
+L0218,25,31400,62000,848,17.5,Not Graduate,Married,Semiurban,No,Y
+L0219,41,119300,81000,539,5.3,Not Graduate,Divorced,Rural,No,N
+L0220,61,48800,139000,685,11.3,Not Graduate,Single,Rural,No,N
+L0221,26,31200,54000,585,11.7,Graduate,Married,Urban,Yes,Y
+L0222,41,49500,161000,632,6.7,Graduate,Married,Semiurban,No,N
+L0223,52,19900,68000,680,4.9,Not Graduate,Married,Urban,No,N
+L0224,30,35100,118000,495,2.7,Graduate,Married,Semiurban,No,N
+L0225,53,42000,82000,687,1.2,Not Graduate,Married,Semiurban,No,Y
+L0226,34,38600,63000,812,8.6,Graduate,Single,Urban,No,Y
+L0227,57,57300,179000,635,7.4,Not Graduate,Single,Urban,No,N
+L0228,47,46900,155000,689,9.5,Graduate,Single,Rural,No,N
+L0229,45,54200,120000,746,3.8,Graduate,Married,Urban,No,Y
+L0230,28,29400,107000,657,18.6,Not Graduate,Married,Urban,No,N
+L0231,41,60100,60000,626,7.9,Not Graduate,Married,Urban,No,N
+L0232,59,83500,299000,499,5.2,Not Graduate,Single,Semiurban,No,N
+L0233,21,25900,22000,718,0.7,Not Graduate,Married,Rural,No,N
+L0234,55,26900,28000,661,4.2,Graduate,Married,Rural,Yes,N
+L0235,43,73200,173000,594,9.8,Graduate,Married,Semiurban,No,N
+L0236,53,36800,27000,679,14.2,Graduate,Single,Urban,No,Y
+L0237,50,75500,52000,626,5.8,Graduate,Married,Urban,No,Y
+L0238,40,32900,17000,630,15.7,Graduate,Single,Semiurban,Yes,Y
+L0239,34,77200,156000,715,2.6,Not Graduate,Single,Rural,No,Y
+L0240,49,42600,137000,569,7.6,Graduate,Single,Semiurban,No,N
+L0241,27,45100,28000,748,7.8,Graduate,Married,Semiurban,No,Y
+L0242,47,81200,226000,565,8.7,Graduate,Married,Semiurban,No,N
+L0243,25,34100,115000,620,6.4,Graduate,Married,Semiurban,No,N
+L0244,50,26300,29000,814,7.3,Graduate,Married,Semiurban,No,Y
+L0245,49,32800,33000,754,2.5,Graduate,Single,Semiurban,No,Y
+L0246,24,49200,173000,677,13.3,Graduate,Married,Semiurban,No,N
+L0247,55,19800,67000,599,10.6,Graduate,Married,Semiurban,No,Y
+L0248,39,53500,128000,630,7.1,Not Graduate,Married,Rural,No,N
+L0249,56,31500,106000,675,10.7,Graduate,Single,Semiurban,No,Y
+L0250,22,67300,55000,672,13.6,Graduate,Married,Urban,No,Y
+L0251,29,13700,26000,663,8.6,Graduate,Single,Urban,Yes,Y
+L0252,43,28200,87000,667,19.9,Graduate,Married,Semiurban,No,N
+L0253,29,18800,26000,653,9.1,Graduate,Divorced,Semiurban,Yes,N
+L0254,35,27700,87000,561,2.9,Not Graduate,Single,Semiurban,No,N
+L0255,50,44900,102000,631,6.9,Graduate,Married,Semiurban,No,N
+L0256,27,37000,116000,738,11.0,Graduate,Married,Urban,No,N
+L0257,51,35800,76000,567,13.6,Graduate,Married,Semiurban,No,Y
+L0258,25,37400,67000,655,6.5,Not Graduate,Married,Semiurban,Yes,N
+L0259,28,44000,56000,608,2.7,Graduate,Married,Semiurban,No,N
+L0260,47,25500,31000,678,4.8,Graduate,Single,Semiurban,No,N
+L0261,56,55200,173000,640,1.7,Not Graduate,Single,Urban,No,N
+L0262,28,54100,50000,780,9.7,Graduate,Married,Semiurban,No,Y
+L0263,34,47700,38000,707,4.1,Graduate,Single,Rural,No,N
+L0264,62,51600,58000,571,3.3,Graduate,Married,Rural,No,Y
+L0265,65,45900,51000,720,10.3,Graduate,Divorced,Semiurban,No,Y
+L0266,47,100300,339000,611,15.5,Not Graduate,Married,Urban,No,N
+L0267,41,38600,73000,626,3.2,Graduate,Single,Semiurban,No,Y
+L0268,36,35000,139000,693,6.5,Graduate,Single,Semiurban,No,Y
+L0269,48,28600,28000,633,5.0,Graduate,Married,Urban,No,N
+L0270,47,25200,70000,736,14.0,Graduate,Married,Rural,Yes,N
+L0271,34,22900,47000,611,5.4,Not Graduate,Married,Urban,No,N
+L0272,22,26900,50000,623,2.5,Graduate,Single,Urban,No,N
+L0273,27,38900,139000,620,5.6,Not Graduate,Married,Urban,No,N
+L0274,64,46700,183000,627,12.1,Graduate,Single,Urban,Yes,N
+L0275,39,41100,146000,752,4.8,Graduate,Single,Rural,Yes,N
+L0276,42,28400,33000,717,3.5,Graduate,Single,Semiurban,No,Y
+L0277,42,60200,77000,798,5.2,Not Graduate,Married,Urban,No,Y
+L0278,56,56000,157000,840,2.5,Graduate,Married,Semiurban,No,N
+L0279,23,37400,57000,592,5.0,Graduate,Single,Semiurban,No,N
+L0280,24,29900,92000,675,3.7,Not Graduate,Married,Urban,No,N
+L0281,33,51400,128000,581,22.2,Graduate,Single,Urban,No,N
+L0282,42,43700,106000,611,0.9,Graduate,Married,Semiurban,No,Y
+L0283,51,20900,71000,622,2.8,Graduate,Married,Urban,No,N
+L0284,43,38900,116000,590,3.5,Not Graduate,Single,Rural,No,N
+L0285,40,45200,27000,591,2.5,Graduate,Married,Urban,Yes,N
+L0286,63,26800,18000,659,7.7,Graduate,Married,Semiurban,No,Y
+L0287,28,43700,114000,578,3.2,Graduate,Married,Rural,No,N
+L0288,46,20900,46000,733,1.5,Graduate,Married,Urban,No,Y
+L0289,45,73200,103000,601,6.1,Graduate,Single,Urban,No,Y
+L0290,42,70400,138000,850,4.6,Graduate,Married,Rural,No,Y
+L0291,57,35800,113000,636,3.3,Graduate,Married,Semiurban,No,Y
+L0292,33,47300,160000,675,13.8,Graduate,Married,Semiurban,No,N
+L0293,63,13600,34000,572,7.8,Not Graduate,Divorced,Urban,No,N
+L0294,35,23900,44000,797,7.2,Graduate,Married,Urban,Yes,N
+L0295,45,35200,51000,753,8.0,Graduate,Divorced,Semiurban,No,Y
+L0296,44,24800,58000,692,7.7,Not Graduate,Single,Rural,Yes,N
+L0297,59,55400,89000,568,4.7,Not Graduate,Married,Urban,Yes,N
+L0298,40,98600,244000,685,3.2,Graduate,Single,Rural,No,N
+L0299,33,23600,68000,585,6.2,Graduate,Single,Semiurban,Yes,N
+L0300,21,27500,20000,779,4.7,Graduate,Married,Urban,No,Y
+L0301,37,44600,22000,730,0.9,Graduate,Married,Urban,No,Y
+L0302,58,82900,103000,677,2.3,Graduate,Single,Urban,Yes,Y
+L0303,21,23200,84000,487,4.2,Graduate,Single,Semiurban,No,N
+L0304,61,44900,124000,596,10.5,Graduate,Single,Semiurban,Yes,Y
+L0305,45,91100,100000,721,6.2,Graduate,Divorced,Semiurban,No,N
+L0306,27,19100,69000,760,2.8,Graduate,Married,Urban,Yes,Y
+L0307,34,22600,48000,753,2.2,Graduate,Single,Semiurban,No,Y
+L0308,45,33200,72000,550,12.0,Graduate,Single,Semiurban,No,Y
+L0309,35,31800,120000,692,4.9,Not Graduate,Married,Semiurban,No,N
+L0310,25,57900,41000,746,0.2,Not Graduate,Married,Semiurban,Yes,Y
+L0311,50,44700,56000,545,5.1,Graduate,Married,Urban,No,N
+L0312,51,18100,46000,669,9.0,Graduate,Single,Semiurban,No,Y
+L0313,26,50600,60000,690,2.1,Graduate,Married,Semiurban,No,Y
+L0314,33,30900,89000,647,5.9,Graduate,Single,Urban,No,N
+L0315,31,71200,89000,531,6.3,Not Graduate,Married,Urban,Yes,N
+L0316,50,30300,26000,645,2.2,Graduate,Married,Semiurban,Yes,Y
+L0317,53,30100,37000,645,12.7,Graduate,Single,Semiurban,No,Y
+L0318,53,51200,101000,658,6.4,Graduate,Married,Urban,No,Y
+L0319,63,56600,63000,627,4.2,Graduate,Single,Rural,No,Y
+L0320,55,49100,48000,636,4.9,Graduate,Married,Rural,No,N
+L0321,35,18800,66000,667,1.9,Graduate,Divorced,Urban,No,N
+L0322,25,51100,83000,703,1.8,Not Graduate,Married,Semiurban,Yes,Y
+L0323,48,25200,44000,647,3.9,Graduate,Divorced,Semiurban,No,Y
+L0324,62,44600,31000,639,4.1,Graduate,Single,Rural,No,N
+L0325,64,21100,37000,676,4.7,Graduate,Married,Urban,No,Y
+L0326,31,49100,70000,525,13.5,Graduate,Married,Urban,No,Y
+L0327,31,27900,74000,705,8.7,Graduate,Married,Semiurban,No,Y
+L0328,22,22500,27000,669,1.0,Graduate,Single,Urban,No,N
+L0329,27,55300,200000,672,11.8,Not Graduate,Single,Semiurban,No,N
+L0330,45,44700,168000,742,3.9,Graduate,Married,Semiurban,No,Y
+L0331,45,30400,26000,523,9.3,Graduate,Married,Urban,No,Y
+L0332,37,77100,68000,521,4.1,Graduate,Single,Semiurban,No,N
+L0333,34,32900,30000,690,6.1,Graduate,Married,Rural,Yes,Y
+L0334,58,40700,109000,669,2.0,Graduate,Single,Rural,No,Y
+L0335,41,45300,42000,682,7.1,Not Graduate,Married,Semiurban,No,Y
+L0336,57,30400,106000,635,10.0,Graduate,Single,Urban,No,N
+L0337,64,49600,156000,719,1.2,Graduate,Divorced,Urban,Yes,N
+L0338,35,31600,106000,739,10.1,Graduate,Married,Rural,No,N
+L0339,30,33300,78000,706,3.2,Graduate,Married,Semiurban,No,Y
+L0340,63,74100,296000,650,16.3,Graduate,Married,Semiurban,No,N
+L0341,49,25100,16000,511,9.4,Graduate,Single,Rural,No,N
+L0342,34,13600,26000,727,8.3,Graduate,Married,Urban,No,Y
+L0343,48,82900,135000,761,5.0,Graduate,Divorced,Semiurban,No,Y
+L0344,44,126400,483000,718,24.8,Not Graduate,Single,Urban,No,N
+L0345,61,33400,84000,604,3.9,Not Graduate,Married,Urban,Yes,Y
+L0346,32,16800,56000,720,2.4,Not Graduate,Single,Semiurban,No,N
+L0347,65,34900,38000,734,3.3,Not Graduate,Married,Semiurban,No,Y
+L0348,63,35300,139000,786,11.2,Not Graduate,Single,Rural,No,N
+L0349,29,36800,83000,604,6.0,Not Graduate,Married,Urban,Yes,N
+L0350,28,24300,54000,653,5.4,Not Graduate,Single,Rural,No,N
+L0351,44,52100,203000,726,4.0,Not Graduate,Divorced,Semiurban,No,N
+L0352,23,50800,93000,674,5.2,Not Graduate,Single,Semiurban,No,Y
+L0353,34,20500,39000,586,3.7,Not Graduate,Single,Rural,Yes,N
+L0354,40,55000,140000,701,8.9,Graduate,Married,Semiurban,No,Y
+L0355,64,101100,96000,713,4.6,Graduate,Single,Semiurban,No,Y
+L0356,65,43400,70000,676,3.4,Graduate,Single,Urban,No,Y
+L0357,27,34500,41000,686,10.6,Not Graduate,Single,Urban,No,Y
+L0358,61,37700,32000,650,2.5,Graduate,Married,Rural,No,Y
+L0359,25,52900,187000,780,6.1,Not Graduate,Married,Semiurban,No,Y
+L0360,54,18400,47000,602,0.8,Not Graduate,Single,Urban,No,N
+L0361,59,43200,76000,625,1.6,Not Graduate,Married,Urban,No,Y
+L0362,61,33700,65000,670,4.2,Graduate,Single,Semiurban,No,Y
+L0363,31,92200,185000,735,3.7,Graduate,Single,Semiurban,No,Y
+L0364,61,37100,101000,557,3.7,Not Graduate,Divorced,Urban,No,N
+L0365,26,85000,318000,571,9.4,Not Graduate,Married,Rural,No,N
+L0366,44,24400,92000,517,9.8,Not Graduate,Divorced,Semiurban,No,N
+L0367,42,52300,98000,672,6.9,Graduate,Married,Rural,No,N
+L0368,35,46300,77000,586,2.3,Graduate,Married,Urban,No,N
+L0369,21,27100,56000,641,5.1,Graduate,Single,Semiurban,No,Y
+L0370,55,43500,108000,719,17.8,Not Graduate,Married,Urban,No,Y
+L0371,36,69300,147000,621,23.3,Graduate,Married,Urban,No,N
+L0372,50,34700,97000,687,10.7,Not Graduate,Married,Semiurban,No,Y
+L0373,39,18700,46000,647,2.4,Not Graduate,Married,Semiurban,No,Y
+L0374,37,39800,65000,720,5.2,Graduate,Single,Urban,Yes,Y
+L0375,60,26700,46000,705,6.6,Graduate,Married,Rural,No,Y
+L0376,25,34400,63000,618,5.9,Graduate,Married,Urban,No,Y
+L0377,54,38700,32000,657,11.4,Not Graduate,Single,Semiurban,No,Y
+L0378,54,18600,20000,748,9.2,Graduate,Married,Rural,No,Y
+L0379,38,19400,59000,699,2.3,Graduate,Single,Semiurban,No,N
+L0380,32,49900,93000,565,3.4,Graduate,Divorced,Rural,No,N
+L0381,21,31700,40000,719,10.6,Graduate,Single,Semiurban,No,Y
+L0382,63,12700,31000,588,13.8,Not Graduate,Single,Rural,No,N
+L0383,63,57100,180000,775,6.7,Graduate,Married,Semiurban,No,N
+L0384,31,45400,64000,746,14.9,Graduate,Single,Semiurban,No,Y
+L0385,22,29100,99000,691,6.1,Graduate,Married,Urban,No,N
+L0386,26,22200,83000,681,2.7,Graduate,Married,Semiurban,Yes,N
+L0387,24,58500,152000,654,8.6,Graduate,Single,Urban,No,N
+L0388,58,47000,134000,720,29.8,Not Graduate,Married,Rural,No,Y
+L0389,61,117300,80000,642,1.9,Graduate,Single,Urban,No,Y
+L0390,27,48500,185000,687,14.5,Graduate,Single,Urban,No,Y
+L0391,54,47800,90000,735,8.3,Graduate,Divorced,Rural,No,Y
+L0392,29,37200,139000,627,3.3,Graduate,Married,Urban,No,Y
+L0393,37,58000,147000,623,0.9,Not Graduate,Married,Urban,No,Y
+L0394,47,53200,27000,580,0.5,Graduate,Single,Semiurban,Yes,N
+L0395,53,70500,45000,590,3.7,Not Graduate,Married,Urban,No,N
+L0396,60,31700,91000,532,7.4,Graduate,Married,Urban,No,N
+L0397,23,33000,81000,724,10.1,Graduate,Single,Semiurban,Yes,Y
+L0398,29,32400,19000,805,11.7,Graduate,Divorced,Urban,No,Y
+L0399,33,57300,178000,776,6.9,Graduate,Single,Urban,No,N
+L0400,34,78800,274000,548,6.2,Not Graduate,Married,Urban,No,N
+L0401,65,32600,73000,724,4.3,Graduate,Married,Urban,No,Y
+L0402,55,33200,71000,776,7.5,Graduate,Single,Urban,Yes,Y
+L0403,35,46200,24000,635,3.3,Graduate,Married,Urban,No,Y
+L0404,64,35900,117000,677,2.0,Graduate,Married,Semiurban,No,N
+L0405,43,61600,102000,519,5.9,Not Graduate,Married,Semiurban,Yes,N
+L0406,43,14600,52000,690,9.6,Not Graduate,Married,Urban,Yes,N
+L0407,40,27700,50000,590,1.6,Graduate,Married,Urban,No,N
+L0408,27,28200,70000,684,3.7,Not Graduate,Married,Rural,No,N
+L0409,63,14100,20000,552,5.8,Not Graduate,Single,Semiurban,No,N
+L0410,21,26000,28000,710,5.7,Graduate,Married,Semiurban,Yes,N
+L0411,28,26600,85000,746,8.1,Graduate,Single,Semiurban,No,N
+L0412,31,36700,82000,611,17.4,Graduate,Married,Urban,No,Y
+L0413,33,66200,157000,584,0.5,Not Graduate,Single,Rural,No,N
+L0414,26,35900,139000,508,17.9,Not Graduate,Married,Rural,No,N
+L0415,21,25200,98000,650,17.0,Graduate,Married,Rural,No,Y
+L0416,51,39100,137000,626,10.2,Not Graduate,Married,Urban,No,N
+L0417,64,64400,74000,553,6.6,Not Graduate,Married,Urban,No,N
+L0418,26,25900,67000,703,3.4,Graduate,Married,Urban,No,N
+L0419,34,26600,95000,636,10.1,Graduate,Single,Urban,No,N
+L0420,43,51600,93000,589,6.8,Not Graduate,Divorced,Urban,No,N
+L0421,62,36300,31000,628,4.4,Not Graduate,Married,Semiurban,No,N
+L0422,52,53700,179000,750,10.0,Graduate,Married,Urban,No,Y
+L0423,55,39900,87000,715,11.1,Graduate,Single,Rural,No,Y
+L0424,47,55000,136000,660,13.7,Graduate,Single,Urban,No,N
+L0425,39,25200,99000,716,3.1,Graduate,Married,Urban,No,N
+L0426,29,39900,105000,582,12.6,Graduate,Single,Rural,No,N
+L0427,59,36500,73000,672,4.5,Graduate,Married,Semiurban,No,Y
+L0428,57,23200,42000,681,6.6,Graduate,Single,Urban,Yes,Y
+L0429,22,19900,39000,634,7.5,Graduate,Married,Semiurban,No,Y
+L0430,53,54600,50000,702,11.9,Graduate,Married,Urban,No,Y
+L0431,24,34300,113000,611,9.3,Graduate,Married,Urban,No,N
+L0432,54,25300,87000,708,4.4,Not Graduate,Single,Semiurban,No,Y
+L0433,58,38400,57000,711,0.6,Graduate,Married,Urban,No,Y
+L0434,26,66700,104000,451,8.1,Graduate,Single,Semiurban,No,N
+L0435,40,14400,51000,759,6.4,Graduate,Single,Urban,No,N
+L0436,26,20500,12000,441,1.8,Graduate,Single,Semiurban,Yes,N
+L0437,46,26500,62000,623,6.9,Graduate,Married,Rural,No,N
+L0438,62,77500,165000,746,5.7,Graduate,Married,Urban,No,Y
+L0439,24,45600,133000,646,13.6,Graduate,Married,Urban,No,Y
+L0440,38,56700,61000,560,18.7,Graduate,Single,Semiurban,No,Y
+L0441,64,24000,68000,587,11.0,Graduate,Divorced,Rural,Yes,N
+L0442,34,24300,44000,747,5.5,Graduate,Married,Semiurban,No,Y
+L0443,26,49100,131000,525,6.1,Not Graduate,Single,Semiurban,No,N
+L0444,42,41200,26000,754,3.0,Not Graduate,Married,Semiurban,No,Y
+L0445,43,51400,109000,665,3.5,Graduate,Married,Urban,Yes,Y
+L0446,50,36900,86000,580,5.2,Graduate,Married,Semiurban,No,N
+L0447,35,45500,57000,626,4.8,Graduate,Single,Urban,No,Y
+L0448,64,43100,43000,593,1.7,Graduate,Married,Semiurban,No,N
+L0449,44,57000,66000,734,13.7,Graduate,Married,Urban,No,Y
+L0450,33,57700,98000,724,14.9,Graduate,Single,Urban,No,Y
+L0451,64,19400,16000,541,13.4,Graduate,Married,Semiurban,No,Y
+L0452,62,14600,56000,639,15.3,Graduate,Married,Semiurban,No,N
+L0453,43,63000,121000,605,22.2,Graduate,Married,Semiurban,No,Y
+L0454,22,68500,228000,767,3.0,Not Graduate,Married,Semiurban,Yes,N
+L0455,47,25400,99000,568,21.6,Not Graduate,Married,Rural,No,N
+L0456,45,17400,14000,790,4.3,Graduate,Married,Rural,No,Y
+L0457,27,42000,117000,667,8.9,Graduate,Single,Rural,No,N
+L0458,49,61000,217000,582,1.3,Graduate,Married,Semiurban,No,N
+L0459,58,90100,245000,619,3.9,Not Graduate,Single,Semiurban,Yes,N
+L0460,25,50600,101000,609,11.2,Graduate,Married,Semiurban,No,Y
+L0461,53,34000,68000,574,9.2,Graduate,Married,Semiurban,No,N
+L0462,27,26900,17000,677,4.3,Graduate,Married,Urban,No,Y
+L0463,54,40300,96000,577,6.1,Not Graduate,Married,Semiurban,Yes,N
+L0464,39,35100,140000,506,3.6,Graduate,Married,Urban,No,N
+L0465,21,25400,98000,641,11.1,Graduate,Married,Urban,No,N
+L0466,64,100900,65000,534,14.3,Graduate,Divorced,Rural,No,Y
+L0467,28,89600,266000,613,3.0,Graduate,Single,Urban,No,N
+L0468,47,66900,104000,601,5.7,Graduate,Married,Semiurban,Yes,Y
+L0469,29,26500,97000,604,1.7,Graduate,Single,Semiurban,Yes,N
+L0470,62,59000,39000,820,6.8,Graduate,Single,Urban,No,Y
+L0471,54,53500,202000,674,8.3,Graduate,Single,Rural,No,N
+L0472,57,49000,168000,688,7.2,Graduate,Married,Urban,No,N
+L0473,40,70400,64000,536,7.8,Not Graduate,Married,Rural,Yes,N
+L0474,42,53400,38000,620,5.2,Graduate,Married,Rural,No,Y
+L0475,49,56000,192000,686,5.3,Graduate,Married,Urban,No,N
+L0476,56,53500,56000,593,5.1,Graduate,Married,Urban,No,Y
+L0477,59,46800,111000,738,3.8,Graduate,Single,Urban,No,Y
+L0478,21,18000,67000,579,4.2,Graduate,Divorced,Semiurban,No,N
+L0479,50,41700,104000,648,8.0,Not Graduate,Married,Urban,No,Y
+L0480,25,31200,59000,626,13.7,Graduate,Married,Rural,No,Y
+L0481,33,22600,47000,682,2.6,Not Graduate,Married,Urban,No,N
+L0482,58,85500,62000,621,5.3,Graduate,Married,Rural,Yes,N
+L0483,32,87400,340000,649,2.1,Graduate,Single,Urban,No,N
+L0484,56,74000,117000,652,3.9,Graduate,Married,Rural,No,Y
+L0485,41,45000,52000,614,4.4,Graduate,Single,Urban,No,N
+L0486,31,73700,111000,706,6.5,Graduate,Divorced,Semiurban,No,Y
+L0487,36,40400,157000,687,6.3,Graduate,Single,Semiurban,No,N
+L0488,44,44000,37000,663,5.6,Graduate,Single,Urban,No,Y
+L0489,55,24500,87000,637,7.6,Graduate,Married,Rural,No,N
+L0490,48,48000,143000,729,2.8,Graduate,Married,Urban,No,N
+L0491,62,41200,140000,652,6.5,Not Graduate,Married,Semiurban,No,N
+L0492,60,22300,87000,646,9.4,Graduate,Single,Semiurban,No,Y
+L0493,54,39200,135000,677,2.8,Graduate,Married,Semiurban,Yes,N
+L0494,48,38700,147000,797,1.1,Graduate,Single,Urban,No,Y
+L0495,34,90100,85000,569,11.1,Graduate,Married,Urban,No,N
+L0496,39,60000,197000,727,2.2,Graduate,Married,Urban,Yes,Y
+L0497,26,40300,97000,528,3.7,Graduate,Married,Urban,No,N
+L0498,37,44900,108000,686,9.2,Graduate,Divorced,Urban,Yes,N
+L0499,62,40900,149000,788,2.6,Not Graduate,Married,Rural,No,N
+L0500,40,36600,143000,706,10.6,Graduate,Married,Semiurban,No,N
+L0501,26,24700,73000,682,3.3,Graduate,Married,Semiurban,No,Y
+L0502,50,37500,82000,627,3.0,Graduate,Single,Urban,No,N
+L0503,64,28700,60000,672,2.1,Graduate,Divorced,Urban,No,Y
+L0504,60,22900,42000,651,3.3,Graduate,Married,Semiurban,No,Y
+L0505,33,50500,89000,611,8.4,Graduate,Divorced,Urban,No,N
+L0506,41,47900,90000,648,3.7,Graduate,Married,Urban,No,Y
+L0507,44,18000,15000,684,11.1,Graduate,Single,Semiurban,No,Y
+L0508,32,38000,29000,612,5.8,Graduate,Married,Semiurban,No,Y
+L0509,33,62800,203000,609,6.2,Not Graduate,Married,Rural,No,Y
+L0510,31,64600,133000,567,2.9,Graduate,Single,Urban,No,N
+L0511,65,63700,239000,699,12.2,Graduate,Married,Semiurban,No,Y
+L0512,54,40800,108000,710,9.4,Not Graduate,Married,Urban,No,N
+L0513,58,27400,17000,687,9.3,Graduate,Single,Urban,No,Y
+L0514,57,24600,26000,742,5.0,Graduate,Divorced,Semiurban,No,Y
+L0515,64,46900,57000,676,1.9,Graduate,Married,Urban,No,N
+L0516,25,47600,186000,699,6.4,Not Graduate,Single,Semiurban,No,N
+L0517,60,71600,91000,692,8.1,Graduate,Single,Semiurban,No,Y
+L0518,23,65800,152000,663,8.2,Graduate,Married,Urban,No,Y
+L0519,42,37800,143000,630,7.5,Not Graduate,Single,Rural,No,N
+L0520,47,22900,90000,836,7.3,Graduate,Married,Semiurban,Yes,Y
+L0521,37,34800,46000,636,3.3,Not Graduate,Single,Rural,Yes,N
+L0522,27,44300,30000,620,3.4,Not Graduate,Married,Semiurban,No,N
+L0523,29,36600,38000,702,2.1,Not Graduate,Married,Rural,No,Y
+L0524,58,30900,22000,688,11.2,Graduate,Married,Urban,No,Y
+L0525,35,45000,53000,564,18.2,Graduate,Married,Semiurban,No,N
+L0526,34,32000,80000,754,29.5,Graduate,Single,Rural,Yes,N
+L0527,62,30300,112000,662,6.7,Graduate,Divorced,Urban,No,N
+L0528,27,46200,110000,586,7.3,Graduate,Married,Urban,No,N
+L0529,62,33500,90000,759,5.1,Not Graduate,Married,Rural,No,Y
+L0530,62,44800,54000,716,6.6,Graduate,Married,Semiurban,No,Y
+L0531,47,45400,150000,575,2.6,Graduate,Married,Semiurban,Yes,N
+L0532,28,24000,64000,803,5.1,Graduate,Married,Semiurban,No,Y
+L0533,28,32300,114000,719,3.0,Graduate,Single,Rural,No,N
+L0534,33,76600,293000,669,4.6,Graduate,Single,Rural,Yes,N
+L0535,46,23800,41000,789,3.2,Graduate,Married,Semiurban,No,Y
+L0536,27,15500,13000,681,8.2,Not Graduate,Married,Urban,Yes,Y
+L0537,41,17400,22000,667,8.9,Graduate,Single,Urban,Yes,Y
+L0538,26,40700,83000,620,7.1,Graduate,Married,Semiurban,No,Y
+L0539,45,40700,155000,713,3.4,Graduate,Married,Rural,No,N
+L0540,21,38100,69000,705,2.0,Graduate,Married,Semiurban,No,Y
+L0541,52,69300,222000,671,8.9,Not Graduate,Married,Urban,No,N
+L0542,23,12100,29000,610,5.8,Not Graduate,Married,Urban,No,N
+L0543,29,48000,55000,679,1.0,Graduate,Single,Semiurban,Yes,Y
+L0544,28,81000,131000,664,6.4,Not Graduate,Married,Rural,No,N
+L0545,58,24200,67000,569,7.3,Graduate,Single,Urban,No,N
+L0546,23,33800,96000,559,1.4,Graduate,Married,Semiurban,No,N
+L0547,40,28600,58000,712,8.2,Not Graduate,Single,Rural,No,N
+L0548,47,26800,35000,474,1.7,Graduate,Married,Rural,No,N
+L0549,44,34700,105000,685,3.1,Graduate,Married,Urban,Yes,N
+L0550,51,76300,83000,634,1.7,Graduate,Married,Rural,No,Y
+L0551,57,91800,347000,768,2.9,Graduate,Married,Semiurban,No,Y
+L0552,38,34500,40000,632,2.0,Graduate,Married,Rural,No,N
+L0553,58,94600,83000,719,11.2,Graduate,Single,Urban,Yes,Y
+L0554,35,40800,91000,640,4.8,Graduate,Married,Semiurban,Yes,N
+L0555,65,88400,205000,678,4.1,Graduate,Married,Semiurban,No,Y
+L0556,43,38500,88000,725,11.9,Not Graduate,Married,Urban,Yes,Y
+L0557,54,42600,86000,635,11.5,Graduate,Single,Semiurban,Yes,N
+L0558,60,47300,188000,744,4.3,Not Graduate,Single,Semiurban,No,Y
+L0559,56,167800,369000,595,7.0,Graduate,Single,Semiurban,No,N
+L0560,59,58900,128000,692,3.6,Graduate,Single,Urban,No,Y
+L0561,45,29200,58000,739,5.4,Graduate,Single,Semiurban,No,N
+L0562,22,62100,46000,719,2.4,Not Graduate,Single,Urban,No,Y
+L0563,43,34100,88000,813,7.7,Graduate,Married,Rural,No,Y
+L0564,29,32200,42000,612,12.2,Not Graduate,Single,Rural,No,Y
+L0565,61,60400,165000,566,10.8,Graduate,Single,Urban,No,N
+L0566,31,40700,28000,595,6.0,Graduate,Married,Urban,No,N
+L0567,31,45500,179000,719,0.9,Graduate,Single,Urban,No,N
+L0568,32,40400,87000,707,3.5,Graduate,Married,Semiurban,No,Y
+L0569,49,46700,170000,677,5.3,Graduate,Married,Rural,Yes,N
+L0570,46,48600,105000,585,1.8,Graduate,Married,Semiurban,No,N
+L0571,63,16800,12000,727,1.5,Graduate,Single,Urban,No,Y
+L0572,39,54200,183000,578,14.3,Graduate,Single,Urban,No,N
+L0573,33,25800,71000,756,10.0,Graduate,Married,Urban,No,Y
+L0574,23,21000,68000,850,8.1,Graduate,Married,Rural,No,Y
+L0575,21,39100,78000,697,9.2,Graduate,Married,Semiurban,No,N
+L0576,37,41700,114000,713,2.1,Graduate,Married,Semiurban,No,N
+L0577,62,29400,103000,633,2.8,Graduate,Divorced,Urban,No,N
+L0578,44,58300,158000,534,6.7,Graduate,Married,Rural,No,N
+L0579,61,21900,38000,624,7.1,Graduate,Married,Urban,No,Y
+L0580,25,33400,94000,588,1.7,Not Graduate,Married,Rural,Yes,N
+L0581,25,30800,88000,561,6.4,Graduate,Divorced,Rural,No,N
+L0582,58,39300,152000,799,5.4,Graduate,Married,Semiurban,No,N
+L0583,25,45500,82000,690,10.6,Not Graduate,Single,Rural,No,N
+L0584,23,25500,51000,698,7.1,Graduate,Married,Urban,No,N
+L0585,39,55600,186000,646,15.4,Graduate,Married,Semiurban,Yes,N
+L0586,62,41300,94000,657,4.3,Not Graduate,Single,Urban,No,N
+L0587,52,17100,53000,742,2.2,Not Graduate,Married,Semiurban,No,N
+L0588,25,16600,35000,667,15.1,Graduate,Single,Urban,No,Y
+L0589,58,39900,50000,709,7.4,Graduate,Married,Urban,Yes,Y
+L0590,58,36300,113000,655,5.4,Graduate,Single,Urban,No,N
+L0591,57,38300,37000,644,2.9,Not Graduate,Single,Urban,Yes,Y
+L0592,61,39600,47000,564,4.4,Not Graduate,Single,Semiurban,No,N
+L0593,31,44400,120000,521,4.2,Graduate,Married,Semiurban,No,N
+L0594,65,61500,192000,650,2.1,Graduate,Single,Urban,Yes,N
+L0595,35,24300,88000,674,0.6,Graduate,Divorced,Rural,Yes,N
+L0596,57,23700,34000,573,4.1,Graduate,Married,Rural,No,N
+L0597,47,24500,22000,667,9.4,Graduate,Married,Urban,No,Y
+L0598,56,45700,176000,674,12.8,Graduate,Single,Semiurban,No,Y
+L0599,49,70300,73000,508,10.8,Graduate,Married,Semiurban,No,N
+L0600,49,33100,39000,601,11.3,Graduate,Single,Semiurban,No,Y
