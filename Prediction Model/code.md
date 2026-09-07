@@ -298,6 +298,6 @@ print(
 )
 ```
 ## OUTPUT-
-https://github.com/Harshishere01/Machine-Learning/blob/46f17c2e6014850d7c1e123ca6d7b06eba69c8e6/Screenshot%202026-09-02%20233124.png
+<img width="1496" height="886" alt="Image" src="https://github.com/user-attachments/assets/62dc631e-2514-4dda-874c-888aa06ed433" />
 
 <img width="1544" height="452" alt="Image" src="https://github.com/user-attachments/assets/7b237c58-1ab1-4561-a019-fc80026aa330" />
