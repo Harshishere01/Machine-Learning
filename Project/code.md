@@ -882,6 +882,24 @@ print("\nDone!")
 
 <img width="533" height="325" alt="Image" src="https://github.com/user-attachments/assets/b2cf5ab9-00d4-482f-8c2c-be320c7dbac6" />
 
+<img width="1187" height="976" alt="Image" src="https://github.com/user-attachments/assets/5a4acee4-0eb5-49ba-88f3-f5ee8c7fe390" />
+
+
+## model comparison results
+<img width="515" height="110" alt="image" src="https://github.com/user-attachments/assets/3c17315c-6165-4efd-860f-01a6acd00744" />
+
+## actual vs predicted
+<img width="225" height="840" alt="image" src="https://github.com/user-attachments/assets/de67c9b1-813f-47be-8e31-b6d0c0e42037" />
+<img width="219" height="804" alt="image" src="https://github.com/user-attachments/assets/bdeeceb9-085d-4b84-8d0e-32195dcbc106" />
+<img width="227" height="822" alt="image" src="https://github.com/user-attachments/assets/b0b17fa4-1e64-4685-9e34-0addbc6285d9" />
+<img width="232" height="444" alt="image" src="https://github.com/user-attachments/assets/f7f9cd91-063c-4758-8fae-bcdabd91cf7d" />
+
 <img width="1866" height="940" alt="Image" src="https://github.com/user-attachments/assets/c2e32185-2ad2-4cca-945b-3067f52adb2e" />
 
-<img width="1187" height="976" alt="Image" src="https://github.com/user-attachments/assets/5a4acee4-0eb5-49ba-88f3-f5ee8c7fe390" />
+
+## clean child marriage dataset
+
+
+## linear regression coefficient 
+<img width="955" height="252" alt="image" src="https://github.com/user-attachments/assets/2b417392-bf38-4d1d-be86-7af35de9c42b" />
+
