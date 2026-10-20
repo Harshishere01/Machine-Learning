@@ -886,9 +886,15 @@ print("\nDone!")
 
 
 ## model comparison results
+
+[View the raw data file](https://github.com/Harshishere01/Machine-Learning/blob/main/Project/model_comparison_results.csv)
+
 <img width="515" height="110" alt="image" src="https://github.com/user-attachments/assets/3c17315c-6165-4efd-860f-01a6acd00744" />
 
 ## actual vs predicted
+
+[View the raw data file](https://github.com/Harshishere01/Machine-Learning/blob/main/Project/actual_vs_predicted.csv)
+
 <img width="225" height="840" alt="image" src="https://github.com/user-attachments/assets/de67c9b1-813f-47be-8e31-b6d0c0e42037" />
 <img width="219" height="804" alt="image" src="https://github.com/user-attachments/assets/bdeeceb9-085d-4b84-8d0e-32195dcbc106" />
 <img width="227" height="822" alt="image" src="https://github.com/user-attachments/assets/b0b17fa4-1e64-4685-9e34-0addbc6285d9" />
@@ -899,7 +905,11 @@ print("\nDone!")
 
 ## clean child marriage dataset
 
+[View the raw data file](https://github.com/Harshishere01/Machine-Learning/blob/main/Project/clean_child_marriage_dataset.csv)
 
 ## linear regression coefficient 
+
+[View the raw data file](https://github.com/Harshishere01/Machine-Learning/blob/main/Project/linear_regression_coefficients.csv)
+
 <img width="955" height="252" alt="image" src="https://github.com/user-attachments/assets/2b417392-bf38-4d1d-be86-7af35de9c42b" />
 
