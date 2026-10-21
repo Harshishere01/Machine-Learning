@@ -1,0 +1,1058 @@
+{
+ "meta": {
+  "n_rows": 706,
+  "n_cols": 109,
+  "n_states": 36,
+  "n_features_all": 97,
+  "n_features_B": 95,
+  "n_features_C": 16,
+  "dropped_missing": [
+   "Children born at home who were taken to a ",
+   "Children with diarrhoea in the 2 weeks pre",
+   "Children with diarrhoea in the 2 weeks pre",
+   "Children swith diarrhoea in the 2 weeks pr",
+   "Children age 6-8 months receiving solid or",
+   "Non-breastfeeding children age 6-23 months"
+  ],
+  "n_dropped_missing": 6,
+  "miss_dropped_pct": [
+   59.8,
+   69.7,
+   69.7,
+   69.7,
+   90.9,
+   91.1
+  ],
+  "n_size_cols": 3,
+  "n_paren": 5068,
+  "n_star": 4125,
+  "n_train": 564,
+  "n_test": 142,
+  "national": 23.3,
+  "pos_rate_all": 0.3626062322946176,
+  "pos_rate_train": 0.3617021276595745,
+  "pos_rate_test": 0.36619718309859156,
+  "y_mean": 20.446600566572236,
+  "y_std": 12.43947937351395,
+  "y_median": 18.25,
+  "y_min": 0.0,
+  "y_max": 57.6,
+  "n_zero": 1,
+  "n_dup_names": 16,
+  "missing_cells_pct": 1.3755439385531965,
+  "n_cols_with_missing": 23
+ },
+ "baseline_reg": {
+  "Mean predictor": {
+   "MAE": 9.722113175506943,
+   "RMSE": 11.980556730699572,
+   "R2": -8.572485659952278e-05
+  },
+  "State-mean predictor": {
+   "MAE": 6.353252501112572,
+   "RMSE": 8.356822863141632,
+   "R2": 0.5134072637244913
+  }
+ },
+ "baseline_clf": {
+  "Majority class": {
+   "Acc": 0.6338028169014085,
+   "Prec": 0.0,
+   "Rec": 0.0,
+   "F1": 0.0,
+   "AUC": 0.5
+  },
+  "State-mean rule": {
+   "Acc": 0.7605633802816901,
+   "Prec": 0.7045454545454546,
+   "Rec": 0.5961538461538461,
+   "F1": 0.6458333333333334,
+   "AUC": 0.8522435897435898
+  }
+ },
+ "reg": {
+  "Linear reg. (OLS)": {
+   "MAE": 4.653547172023979,
+   "RMSE": 5.747376936958362,
+   "R2": 0.7698438468511242,
+   "CV_RMSE": 6.477163345522156
+  },
+  "Ridge reg.": {
+   "MAE": 4.407238070352894,
+   "RMSE": 5.406638414614521,
+   "R2": 0.7963249273720223,
+   "CV_RMSE": 6.159673868511658
+  },
+  "Lasso reg.": {
+   "MAE": 4.400852759235241,
+   "RMSE": 5.375872974934242,
+   "R2": 0.7986362803830228,
+   "CV_RMSE": 6.0292769424799895
+  },
+  "Polynomial (deg 2) + Ridge": {
+   "MAE": 5.19440292612304,
+   "RMSE": 6.862425393889584,
+   "R2": 0.6718756199350028,
+   "CV_RMSE": 6.760439911601921
+  },
+  "Decision tree": {
+   "MAE": 5.767394973260839,
+   "RMSE": 7.4370974864120605,
+   "R2": 0.6146191086294066,
+   "CV_RMSE": 7.833619806084025
+  },
+  "k-NN regressor": {
+   "MAE": 5.174092446774449,
+   "RMSE": 6.788377369744307,
+   "R2": 0.6789185746269667,
+   "CV_RMSE": 6.913095055995186
+  },
+  "SVR (RBF)": {
+   "MAE": 4.232193700240384,
+   "RMSE": 5.179979227055984,
+   "R2": 0.8130440615780514,
+   "CV_RMSE": 5.709528137552217
+  },
+  "MLP (64-32)": {
+   "MAE": 4.6929340467890075,
+   "RMSE": 5.797068924137094,
+   "R2": 0.7658467682905118,
+   "CV_RMSE": 6.491597214340483
+  },
+  "Random forest": {
+   "MAE": 4.59755633802817,
+   "RMSE": 5.510718449300852,
+   "R2": 0.7884077903158262,
+   "CV_RMSE": 6.192845051121803
+  }
+ },
+ "reg_params": {
+  "Linear reg. (OLS)": "-",
+  "Ridge reg.": "alpha=30",
+  "Lasso reg.": "alpha=0.1",
+  "Polynomial (deg 2) + Ridge": "alpha=1000",
+  "Decision tree": "max_depth=6, min_samples_leaf=20",
+  "k-NN regressor": "n_neighbors=5, weights=distance",
+  "SVR (RBF)": "C=100, epsilon=3, gamma=0.003",
+  "MLP (64-32)": "alpha=1",
+  "Random forest": "max_features=0.3, min_samples_leaf=1"
+ },
+ "best_reg": "SVR (RBF)",
+ "boot": {
+  "best_rmse_ci": [
+   4.642175660843542,
+   5.727899531585497
+  ],
+  "mean_rmse_ci": [
+   10.633183467606717,
+   13.360515367348814
+  ],
+  "diff_best_vs_state_ci": [
+   2.0989815988712723,
+   4.248606960635483
+  ],
+  "best_f1_ci": [
+   0.7884615384615384,
+   0.9247472315840153
+  ]
+ },
+ "clf": {
+  "Logistic regression": {
+   "Acc": 0.8943661971830986,
+   "Prec": 0.8245614035087719,
+   "Rec": 0.9038461538461539,
+   "F1": 0.8623853211009175,
+   "AUC": 0.9408119658119658,
+   "CV_F1": 0.8211439653632588
+  },
+  "Gauss. Naive Bayes": {
+   "Acc": 0.7676056338028169,
+   "Prec": 0.6338028169014085,
+   "Rec": 0.8653846153846154,
+   "F1": 0.7317073170731707,
+   "AUC": 0.872008547008547,
+   "CV_F1": 0.7326542162809192
+  },
+  "Decision tree": {
+   "Acc": 0.8661971830985915,
+   "Prec": 0.8666666666666667,
+   "Rec": 0.75,
+   "F1": 0.8041237113402062,
+   "AUC": 0.861431623931624,
+   "CV_F1": 0.7840588525398652
+  },
+  "k-NN": {
+   "Acc": 0.8661971830985915,
+   "Prec": 0.8367346938775511,
+   "Rec": 0.7884615384615384,
+   "F1": 0.8118811881188119,
+   "AUC": 0.9162393162393162,
+   "CV_F1": 0.7663970590812696
+  },
+  "Perceptron": {
+   "Acc": 0.823943661971831,
+   "Prec": 0.7213114754098361,
+   "Rec": 0.8461538461538461,
+   "F1": 0.7787610619469026,
+   "AUC": 0.9217948717948719,
+   "CV_F1": 0.7645407285670138
+  },
+  "SVM (RBF)": {
+   "Acc": 0.8943661971830986,
+   "Prec": 0.8627450980392157,
+   "Rec": 0.8461538461538461,
+   "F1": 0.8543689320388349,
+   "AUC": 0.9514957264957264,
+   "CV_F1": 0.8243253581861177
+  },
+  "MLP (64-32)": {
+   "Acc": 0.852112676056338,
+   "Prec": 0.8163265306122449,
+   "Rec": 0.7692307692307693,
+   "F1": 0.7920792079207921,
+   "AUC": 0.9403846153846154,
+   "CV_F1": 0.7135768645357686
+  },
+  "Random forest": {
+   "Acc": 0.8873239436619719,
+   "Prec": 0.8461538461538461,
+   "Rec": 0.8461538461538461,
+   "F1": 0.8461538461538461,
+   "AUC": 0.9377136752136752,
+   "CV_F1": 0.8266981556900728
+  }
+ },
+ "clf_params": {
+  "Logistic regression": "C=0.1, class_weight=balanced",
+  "Gauss. Naive Bayes": "var_smoothing=0.1",
+  "Decision tree": "class_weight=None, max_depth=6, min_samples_leaf=10",
+  "k-NN": "n_neighbors=10",
+  "Perceptron": "alpha=0.0001, class_weight=balanced",
+  "SVM (RBF)": "C=10, class_weight=None, gamma=0.003",
+  "MLP (64-32)": "alpha=0.001",
+  "Random forest": "class_weight=None, max_features=0.3, min_samples_leaf=1"
+ },
+ "best_clf": "Logistic regression",
+ "best_clf_cm": {
+  "TN": 80,
+  "FP": 10,
+  "FN": 5,
+  "TP": 47
+ },
+ "reg_thresholded": {
+  "Acc": 0.8802816901408451,
+  "Prec": 0.8431372549019608,
+  "Rec": 0.8269230769230769,
+  "F1": 0.8349514563106796,
+  "AUC": 0.9538461538461538
+ },
+ "grouped": {
+  "Linear reg. (OLS)": {
+   "MAE": 5.890244957120473,
+   "RMSE": 7.386988049106962,
+   "R2": 0.647360965163862
+  },
+  "Ridge reg.": {
+   "MAE": 5.512943006778722,
+   "RMSE": 6.936394291725387,
+   "R2": 0.6890696356973497
+  },
+  "Lasso reg.": {
+   "MAE": 5.409463486622926,
+   "RMSE": 6.78969906469551,
+   "R2": 0.7020820692052655
+  },
+  "Polynomial (deg 2) + Ridge": {
+   "MAE": 7.4514114054707035,
+   "RMSE": 9.302302257367776,
+   "R2": 0.4407879964440653
+  },
+  "Decision tree": {
+   "MAE": 6.838547313897071,
+   "RMSE": 8.94533548271138,
+   "R2": 0.4828829502388178
+  },
+  "k-NN regressor": {
+   "MAE": 7.5220424340345025,
+   "RMSE": 9.565736775081088,
+   "R2": 0.4086665541703467
+  },
+  "SVR (RBF)": {
+   "MAE": 5.387335451168738,
+   "RMSE": 6.821832392338549,
+   "R2": 0.6992555087101763
+  },
+  "MLP (64-32)": {
+   "MAE": 6.230887805920061,
+   "RMSE": 7.864696035307132,
+   "R2": 0.6002766894585405
+  },
+  "Random forest": {
+   "MAE": 5.95378895184136,
+   "RMSE": 7.466081473531153,
+   "R2": 0.6397690353516666
+  },
+  "Mean predictor": {
+   "MAE": 10.233112249968842,
+   "RMSE": 12.496795728004722,
+   "R2": -0.009236463788480087
+  }
+ },
+ "random_cv_all": {
+  "Ridge reg.": {
+   "MAE": 4.702663852543153,
+   "RMSE": 5.970436305996479,
+   "R2": 0.7696396495964476
+  },
+  "SVR (RBF)": {
+   "MAE": 4.294357724781409,
+   "RMSE": 5.486225326184328,
+   "R2": 0.8054895795200334
+  },
+  "Random forest": {
+   "MAE": 4.653034702549576,
+   "RMSE": 5.898524356114351,
+   "R2": 0.7751554602148618
+  }
+ },
+ "best_grouped": "Lasso reg.",
+ "per_state": [
+  {
+   "State": "Bihar",
+   "n": 38,
+   "mean_y": 41.07,
+   "mean_pred": 38.13,
+   "rmse_m": 6.1,
+   "rmse_b": 22.72,
+   "bias": -2.94
+  },
+  {
+   "State": "Tripura",
+   "n": 8,
+   "mean_y": 39.67,
+   "mean_pred": 38.52,
+   "rmse_m": 8.33,
+   "rmse_b": 20.45,
+   "bias": -1.15
+  },
+  {
+   "State": "West Bengal",
+   "n": 19,
+   "mean_y": 39.37,
+   "mean_pred": 31.36,
+   "rmse_m": 10.57,
+   "rmse_b": 22.98,
+   "bias": -8.01
+  },
+  {
+   "State": "Jharkhand",
+   "n": 24,
+   "mean_y": 32.35,
+   "mean_pred": 31.75,
+   "rmse_m": 5.61,
+   "rmse_b": 15.68,
+   "bias": -0.6
+  },
+  {
+   "State": "Assam",
+   "n": 33,
+   "mean_y": 30.51,
+   "mean_pred": 27.32,
+   "rmse_m": 6.33,
+   "rmse_b": 13.2,
+   "bias": -3.19
+  },
+  {
+   "State": "Andhra Pradesh",
+   "n": 13,
+   "mean_y": 29.41,
+   "mean_pred": 31.91,
+   "rmse_m": 6.09,
+   "rmse_b": 10.22,
+   "bias": 2.5
+  },
+  {
+   "State": "Rajasthan",
+   "n": 33,
+   "mean_y": 26.48,
+   "mean_pred": 20.5,
+   "rmse_m": 9.02,
+   "rmse_b": 10.56,
+   "bias": -5.98
+  },
+  {
+   "State": "Telangana",
+   "n": 31,
+   "mean_y": 24.3,
+   "mean_pred": 23.23,
+   "rmse_m": 6.8,
+   "rmse_b": 8.36,
+   "bias": -1.07
+  },
+  {
+   "State": "Madhya Pradesh",
+   "n": 51,
+   "mean_y": 23.26,
+   "mean_pred": 23.94,
+   "rmse_m": 7.53,
+   "rmse_b": 9.59,
+   "bias": 0.68
+  },
+  {
+   "State": "Gujarat",
+   "n": 33,
+   "mean_y": 22.18,
+   "mean_pred": 20.37,
+   "rmse_m": 7.4,
+   "rmse_b": 10.22,
+   "bias": -1.81
+  },
+  {
+   "State": "Maharashtra",
+   "n": 36,
+   "mean_y": 21.71,
+   "mean_pred": 22.91,
+   "rmse_m": 5.2,
+   "rmse_b": 12.9,
+   "bias": 1.2
+  },
+  {
+   "State": "Karnataka",
+   "n": 30,
+   "mean_y": 20.51,
+   "mean_pred": 17.17,
+   "rmse_m": 6.64,
+   "rmse_b": 8.71,
+   "bias": -3.34
+  },
+  {
+   "State": "Odisha",
+   "n": 30,
+   "mean_y": 20.38,
+   "mean_pred": 20.53,
+   "rmse_m": 5.82,
+   "rmse_b": 9.34,
+   "bias": 0.15
+  },
+  {
+   "State": "Dadra and Nagar Haveli & Daman and Diu",
+   "n": 3,
+   "mean_y": 18.37,
+   "mean_pred": 13.39,
+   "rmse_m": 6.24,
+   "rmse_b": 11.82,
+   "bias": -4.98
+  },
+  {
+   "State": "Arunachal Pradesh",
+   "n": 20,
+   "mean_y": 18.21,
+   "mean_pred": 17.88,
+   "rmse_m": 6.06,
+   "rmse_b": 6.33,
+   "bias": -0.33
+  },
+  {
+   "State": "Meghalaya",
+   "n": 11,
+   "mean_y": 17.71,
+   "mean_pred": 20.11,
+   "rmse_m": 4.88,
+   "rmse_b": 6.62,
+   "bias": 2.4
+  },
+  {
+   "State": "Uttar Pradesh",
+   "n": 75,
+   "mean_y": 16.81,
+   "mean_pred": 22.16,
+   "rmse_m": 7.54,
+   "rmse_b": 9.28,
+   "bias": 5.35
+  },
+  {
+   "State": "Manipur",
+   "n": 9,
+   "mean_y": 16.47,
+   "mean_pred": 18.21,
+   "rmse_m": 5.59,
+   "rmse_b": 5.88,
+   "bias": 1.74
+  },
+  {
+   "State": "Andaman & Nicobar Islands",
+   "n": 3,
+   "mean_y": 14.63,
+   "mean_pred": 6.23,
+   "rmse_m": 8.56,
+   "rmse_b": 6.23,
+   "bias": -8.41
+  },
+  {
+   "State": "Chhattisgarh",
+   "n": 27,
+   "mean_y": 13.65,
+   "mean_pred": 17.46,
+   "rmse_m": 6.72,
+   "rmse_b": 9.86,
+   "bias": 3.81
+  },
+  {
+   "State": "Tamil Nadu",
+   "n": 32,
+   "mean_y": 12.87,
+   "mean_pred": 19.4,
+   "rmse_m": 8.33,
+   "rmse_b": 9.16,
+   "bias": 6.54
+  },
+  {
+   "State": "Sikkim",
+   "n": 4,
+   "mean_y": 12.35,
+   "mean_pred": 13.24,
+   "rmse_m": 3.21,
+   "rmse_b": 8.91,
+   "bias": 0.89
+  },
+  {
+   "State": "Haryana",
+   "n": 22,
+   "mean_y": 12.28,
+   "mean_pred": 13.99,
+   "rmse_m": 5.34,
+   "rmse_b": 9.91,
+   "bias": 1.71
+  },
+  {
+   "State": "Mizoram",
+   "n": 8,
+   "mean_y": 11.88,
+   "mean_pred": 10.89,
+   "rmse_m": 3.54,
+   "rmse_b": 10.0,
+   "bias": -0.98
+  },
+  {
+   "State": "Chandigarh",
+   "n": 1,
+   "mean_y": 9.7,
+   "mean_pred": 6.53,
+   "rmse_m": 3.17,
+   "rmse_b": 11.19,
+   "bias": -3.17
+  },
+  {
+   "State": "NCT of Delhi",
+   "n": 11,
+   "mean_y": 9.61,
+   "mean_pred": 11.74,
+   "rmse_m": 3.69,
+   "rmse_b": 11.23,
+   "bias": 2.13
+  },
+  {
+   "State": "Uttarakhand",
+   "n": 13,
+   "mean_y": 9.02,
+   "mean_pred": 11.79,
+   "rmse_m": 5.7,
+   "rmse_b": 12.1,
+   "bias": 2.77
+  },
+  {
+   "State": "Punjab",
+   "n": 22,
+   "mean_y": 8.82,
+   "mean_pred": 9.24,
+   "rmse_m": 3.61,
+   "rmse_b": 12.37,
+   "bias": 0.43
+  },
+  {
+   "State": "Himachal Pradesh",
+   "n": 12,
+   "mean_y": 8.24,
+   "mean_pred": 5.25,
+   "rmse_m": 7.57,
+   "rmse_b": 13.45,
+   "bias": -2.99
+  },
+  {
+   "State": "Puducherry",
+   "n": 4,
+   "mean_y": 7.9,
+   "mean_pred": 6.76,
+   "rmse_m": 2.04,
+   "rmse_b": 13.8,
+   "bias": -1.14
+  },
+  {
+   "State": "Nagaland",
+   "n": 11,
+   "mean_y": 7.37,
+   "mean_pred": 12.69,
+   "rmse_m": 8.13,
+   "rmse_b": 14.66,
+   "bias": 5.32
+  },
+  {
+   "State": "Goa",
+   "n": 2,
+   "mean_y": 5.7,
+   "mean_pred": 6.53,
+   "rmse_m": 2.24,
+   "rmse_b": 15.3,
+   "bias": 0.83
+  },
+  {
+   "State": "Kerala",
+   "n": 14,
+   "mean_y": 5.46,
+   "mean_pred": 5.82,
+   "rmse_m": 3.05,
+   "rmse_b": 15.97,
+   "bias": 0.36
+  },
+  {
+   "State": "Jammu & Kashmir",
+   "n": 20,
+   "mean_y": 4.8,
+   "mean_pred": 11.33,
+   "rmse_m": 7.8,
+   "rmse_b": 15.91,
+   "bias": 6.53
+  },
+  {
+   "State": "Ladakh",
+   "n": 2,
+   "mean_y": 2.5,
+   "mean_pred": 4.08,
+   "rmse_m": 1.79,
+   "rmse_b": 18.31,
+   "bias": 1.58
+  },
+  {
+   "State": "Lakshadweep",
+   "n": 1,
+   "mean_y": 1.3,
+   "mean_pred": 5.76,
+   "rmse_m": 4.46,
+   "rmse_b": 19.07,
+   "bias": 4.46
+  }
+ ],
+ "states_model_beats_baseline": 35,
+ "n_states_tab": 36,
+ "states_worse": [
+  "Andaman & Nicobar Islands"
+ ],
+ "robust": {
+  "A: all indicators": {
+   "n_feat": 97,
+   "Ridge reg.": {
+    "MAE": 4.407238070352894,
+    "RMSE": 5.406638414614521,
+    "R2": 0.7963249273720223,
+    "grpRMSE": 6.936394291725387,
+    "grpR2": 0.6890696356973497
+   },
+   "SVR (RBF)": {
+    "MAE": 4.232193700240384,
+    "RMSE": 5.179979227055984,
+    "R2": 0.8130440615780514,
+    "grpRMSE": 6.821832392338549,
+    "grpR2": 0.6992555087101763
+   },
+   "MLP (64-32)": {
+    "MAE": 4.6929340467890075,
+    "RMSE": 5.797068924137094,
+    "R2": 0.7658467682905118,
+    "grpRMSE": 7.864696035307132,
+    "grpR2": 0.6002766894585405
+   },
+   "Random forest": {
+    "MAE": 4.59755633802817,
+    "RMSE": 5.510718449300852,
+    "R2": 0.7884077903158262,
+    "grpRMSE": 7.466081473531153,
+    "grpR2": 0.6397690353516666
+   }
+  },
+  "B: A minus teen-motherhood & birth order": {
+   "n_feat": 95,
+   "Ridge reg.": {
+    "MAE": 4.844438180290294,
+    "RMSE": 6.232884334521773,
+    "R2": 0.7293167616635872,
+    "grpRMSE": 8.032909853283854,
+    "grpR2": 0.582994889016307
+   },
+   "SVR (RBF)": {
+    "MAE": 4.631530578587624,
+    "RMSE": 5.891738536765731,
+    "R2": 0.7581365968796347,
+    "grpRMSE": 8.047463879170852,
+    "grpR2": 0.5814824604464073
+   },
+   "MLP (64-32)": {
+    "MAE": 4.5665023554385815,
+    "RMSE": 5.988324831814113,
+    "R2": 0.7501416148343848,
+    "grpRMSE": 8.574316054453382,
+    "grpR2": 0.5248895672401435
+   },
+   "Random forest": {
+    "MAE": 5.225661971830988,
+    "RMSE": 6.560456599372755,
+    "R2": 0.700117334908855,
+    "grpRMSE": 9.133450269829293,
+    "grpR2": 0.46090496968053773
+   }
+  },
+  "C: structural indicators only": {
+   "n_feat": 16,
+   "Ridge reg.": {
+    "MAE": 6.357793147687171,
+    "RMSE": 7.934054920356254,
+    "R2": 0.5613949446448349,
+    "grpRMSE": 10.539845250720285,
+    "grpR2": 0.2820998231397429
+   },
+   "SVR (RBF)": {
+    "MAE": 5.982280469921907,
+    "RMSE": 7.587166143924142,
+    "R2": 0.5989094618167219,
+    "grpRMSE": 10.807556467425291,
+    "grpR2": 0.24516745278232777
+   },
+   "MLP (64-32)": {
+    "MAE": 5.613960409862153,
+    "RMSE": 7.2007180004022215,
+    "R2": 0.6387275581554029,
+    "grpRMSE": 10.58683863981302,
+    "grpR2": 0.27568383293280263
+   },
+   "Random forest": {
+    "MAE": 5.496838028169015,
+    "RMSE": 7.015150356524648,
+    "R2": 0.6571081239168153,
+    "grpRMSE": 10.008883478411532,
+    "grpR2": 0.3526087012548985
+   }
+  },
+  "A + state indicators": {
+   "n_feat": 133,
+   "Ridge reg.": {
+    "MAE": 4.335414166491287,
+    "RMSE": 5.305378978723992,
+    "R2": 0.8038826335032084
+   },
+   "SVR (RBF)": {
+    "MAE": 4.209849022457064,
+    "RMSE": 5.15842138560578,
+    "R2": 0.8145969557457924
+   },
+   "MLP (64-32)": {
+    "MAE": 4.7915394951471315,
+    "RMSE": 5.858004630486058,
+    "R2": 0.7608983079190819
+   },
+   "Random forest": {
+    "MAE": 4.485735915492961,
+    "RMSE": 5.41791596071722,
+    "R2": 0.795474361671026
+   }
+  }
+ },
+ "pca": {
+  "n90": 36,
+  "n95": 49,
+  "pc1": 0.21406784266223508,
+  "n_feat": 97
+ },
+ "pca_effect": {
+  "OLS, all features": {
+   "MAE": 4.653547172023979,
+   "RMSE": 5.747376936958362,
+   "R2": 0.7698438468511242
+  },
+  "OLS, PCA 95%": {
+   "MAE": 4.25812133364827,
+   "RMSE": 5.19842546949897,
+   "R2": 0.8117101662782117
+  },
+  "k-NN (k=15), all features": {
+   "MAE": 5.047605633802817,
+   "RMSE": 6.6382098761591894,
+   "R2": 0.6929669078040877
+  },
+  "k-NN (k=15), PCA 95%": {
+   "MAE": 4.944319248826292,
+   "RMSE": 6.489116155687393,
+   "R2": 0.7066039081675289
+  }
+ },
+ "lasso_zero": 44,
+ "lasso_nonzero": 53,
+ "lasso_top": [
+  [
+   "Teen mothers/pregnant (15-19)",
+   6.148
+  ],
+  [
+   "Women literate",
+   -2.574
+  ],
+  [
+   "Institutional births",
+   2.227
+  ],
+  [
+   "Women 10+ yrs schooling",
+   -2.205
+  ],
+  [
+   "Women tobacco use",
+   -1.619
+  ],
+  [
+   "Population <15 yrs",
+   1.243
+  ],
+  [
+   "Improved sanitation",
+   -1.085
+  ],
+  [
+   "Vitamin A dose (9-35 mo)",
+   -0.978
+  ],
+  [
+   "Pill use",
+   0.972
+  ],
+  [
+   "Unmet need for spacing",
+   0.7
+  ]
+ ],
+ "ridge_top": [
+  [
+   "Teen mothers/pregnant (15-19)",
+   5.289
+  ],
+  [
+   "Women literate",
+   -2.181
+  ],
+  [
+   "Women 10+ yrs schooling",
+   -2.017
+  ],
+  [
+   "Population <15 yrs",
+   1.7
+  ],
+  [
+   "Women tobacco use",
+   -1.689
+  ],
+  [
+   "Improved sanitation",
+   -1.343
+  ],
+  [
+   "Pill use",
+   1.189
+  ],
+  [
+   "Institutional births",
+   1.181
+  ]
+ ],
+ "perm_top": [
+  [
+   "Teen mothers/pregnant (15-19)",
+   3.325,
+   0.311
+  ],
+  [
+   "Women 10+ yrs schooling",
+   0.716,
+   0.158
+  ],
+  [
+   "Women literate",
+   0.627,
+   0.138
+  ],
+  [
+   "Improved sanitation",
+   0.221,
+   0.107
+  ],
+  [
+   "Women BMI < 18.5",
+   0.124,
+   0.052
+  ],
+  [
+   "Child underweight",
+   0.113,
+   0.03
+  ],
+  [
+   "Population <15 yrs",
+   0.105,
+   0.027
+  ],
+  [
+   "Told of FP side effects",
+   0.103,
+   0.04
+  ],
+  [
+   "Female ever attended school",
+   0.089,
+   0.038
+  ],
+  [
+   "Pill use",
+   0.087,
+   0.03
+  ]
+ ],
+ "permB_top": [
+  [
+   "Women 10+ yrs schooling",
+   1.645
+  ],
+  [
+   "Women literate",
+   0.752
+  ],
+  [
+   "Improved sanitation",
+   0.466
+  ],
+  [
+   "Pill use",
+   0.262
+  ],
+  [
+   "Population <15 yrs",
+   0.231
+  ],
+  [
+   "Told of FP side effects",
+   0.204
+  ]
+ ],
+ "corr_top_pos": [
+  [
+   "Teen mothers/pregnant (15-19)",
+   0.73
+  ],
+  [
+   "Child underweight",
+   0.48
+  ],
+  [
+   "Population <15 yrs",
+   0.48
+  ],
+  [
+   "Women BMI < 18.5",
+   0.48
+  ],
+  [
+   "Child stunting",
+   0.42
+  ]
+ ],
+ "corr_top_neg": [
+  [
+   "Women 10+ yrs schooling",
+   -0.65
+  ],
+  [
+   "Women literate",
+   -0.62
+  ],
+  [
+   "Improved sanitation",
+   -0.58
+  ],
+  [
+   "Female ever attended school",
+   -0.48
+  ],
+  [
+   "Hygienic menstrual protection",
+   -0.45
+  ]
+ ],
+ "corr_pairs": {
+  "teen_vs_school": -0.4384123059569635,
+  "lit_vs_school": 0.7745255624230035,
+  "underweight_vs_stunt": 0.7040667017062499
+ },
+ "state_r2": 0.5732351770125235,
+ "state_top": [
+  [
+   "Bihar",
+   41.1,
+   38
+  ],
+  [
+   "Tripura",
+   39.7,
+   8
+  ],
+  [
+   "West Bengal",
+   39.4,
+   19
+  ],
+  [
+   "Jharkhand",
+   32.3,
+   24
+  ],
+  [
+   "Assam",
+   30.5,
+   33
+  ]
+ ],
+ "state_bottom": [
+  [
+   "Goa",
+   5.7,
+   2
+  ],
+  [
+   "Kerala",
+   5.5,
+   14
+  ],
+  [
+   "Jammu & Kashmir",
+   4.8,
+   20
+  ],
+  [
+   "Ladakh",
+   2.5,
+   2
+  ],
+  [
+   "Lakshadweep",
+   1.3,
+   1
+  ]
+ ],
+ "n_above_nat": 256,
+ "n_above_40": 59
+}
