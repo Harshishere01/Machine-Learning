@@ -490,3 +490,21 @@ print("Grouped best:", best_grp, grp_res[best_grp]); print("done")
 
 # OUTPUT
 <img width="1413" height="525" alt="image" src="https://github.com/user-attachments/assets/43f3a060-172e-4589-8944-fd0cc15822e0" />
+
+<img width="748" height="660" alt="fig1_missing" src="https://github.com/user-attachments/assets/d2b49e04-3333-4505-9c90-e94130963c07" />
+
+<img width="748" height="1011" alt="fig2_target_states" src="https://github.com/user-attachments/assets/3abe7f4d-6e39-4dcf-85e9-10f5fb160e03" />
+
+<img width="759" height="726" alt="fig3_corr" src="https://github.com/user-attachments/assets/38d92d47-d8d2-42cc-876e-b25c861ccd64" />
+
+<img width="748" height="528" alt="fig4_pca" src="https://github.com/user-attachments/assets/50f86ab2-32f9-47a9-aa51-45d27c650b33" />
+
+<img width="748" height="682" alt="fig5_pipeline" src="https://github.com/user-attachments/assets/dca5c93e-dc16-434e-aae1-8d10678e0410" />
+
+<img width="748" height="682" alt="fig6_pred_obs" src="https://github.com/user-attachments/assets/01116da3-bf7e-4a55-83fe-17cd3d0c5285" />
+
+<img width="748" height="682" alt="fig7_roc" src="https://github.com/user-attachments/assets/cf9912b6-401b-48a0-83bf-96705033d4aa" />
+
+<img width="1562" height="594" alt="fig8_importance" src="https://github.com/user-attachments/assets/b9fd0639-82be-4285-910b-e260e001d65b" />
+
+<img width="1562" height="550" alt="fig9_state_error" src="https://github.com/user-attachments/assets/e1670c7f-8eb6-4b76-93c1-68c730da6d9d" />
