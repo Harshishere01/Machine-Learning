@@ -1,0 +1,33 @@
+{
+  "rows": 706,
+  "states": 36,
+  "features_used": 97,
+  "features_dropped_over_40pct_missing": [
+    "Children born at home who were taken to a health facility for a check-up within 24 hours of birth (for last birth in the 5 years before the survey} (%)",
+    "Children with diarrhoea in the 2 weeks preceding the survey who received oral rehydration salts (ORS) (Children under age 5 years) (%)",
+    "Children with diarrhoea in the 2 weeks preceding the survey who received zinc (Children under age 5 years) (%)",
+    "Children swith diarrhoea in the 2 weeks preceding the survey taken to a health facility or health provider (Children under age 5 years) (%)",
+    "Children age 6-8 months receiving solid or semi-solid food and breastmilk16 (%)",
+    "Non-breastfeeding children age 6-23 months receiving an adequate diet16, 17 (%)"
+  ],
+  "sample_size_columns_excluded": [
+    "Number of Households surveyed",
+    "Number of Women age 15-49 years interviewed",
+    "Number of Men age 15-54 years interviewed"
+  ],
+  "target": "Women age 20-24 years married before age 18 years (%)",
+  "group_column": "State",
+  "missing_predictor_cells_percent_before_imputation": 1.3755439385531965,
+  "districts_per_state_min": 1,
+  "districts_per_state_max": 75,
+  "state_name_normalisation": {
+    "Maharastra": "Maharashtra"
+  },
+  "n_splits": 5,
+  "models_evaluated": [
+    "Ridge",
+    "SVR_RBF",
+    "Random_Forest"
+  ],
+  "baseline": "training-fold target mean"
+}
