@@ -2,7 +2,7 @@
 Reproducible state-grouped cross-validation for the NFHS-5 child-marriage project.
 
 Run from the Project-C folder:
-    python src/grouped_cv.py --data datafile.csv --output results
+    python src/grouped_cv.py -- datafile.csv --output results
 
 The target is district-level prevalence of women aged 20–24 married before age 18.
 GroupKFold keeps all districts from a State/UT in exactly one fold.
