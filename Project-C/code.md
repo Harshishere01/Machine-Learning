@@ -489,6 +489,7 @@ print("Grouped best:", best_grp, grp_res[best_grp]); print("done")
 ```
 
 # OUTPUT
+
 <img width="1413" height="525" alt="image" src="https://github.com/user-attachments/assets/43f3a060-172e-4589-8944-fd0cc15822e0" />
 
 <img width="748" height="660" alt="fig1_missing" src="https://github.com/user-attachments/assets/d2b49e04-3333-4505-9c90-e94130963c07" />
