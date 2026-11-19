@@ -231,7 +231,7 @@ def run_grouped_cv(X, y, groups, models, output_dir: Path):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--data", type=Path, default=Path("data/datafile.csv"))
+    parser.add_argument("--data", type=Path, default=Path("datafile.csv"))
     parser.add_argument("--output", type=Path, default=Path("results"))
     args = parser.parse_args()
 
