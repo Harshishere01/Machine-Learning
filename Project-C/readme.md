@@ -6,7 +6,7 @@ This folder contains a reproducible implementation of the **state-grouped cross-
 `Women age 20-24 years married before age 18 years (%)`
 
 ## Dataset
-Place the NFHS-5 district-level CSV at `data/datafile.csv`. The supplied dataset in this folder is the original `datafile.csv` provided for this project.
+Place the NFHS-5 district-level CSV at `datafile.csv`. The supplied dataset in this folder is the original `datafile.csv` provided for this project.
 
 ## Setup
 ```bash
@@ -22,7 +22,7 @@ pip install -r requirements.txt
 ## Run
 From this folder:
 ```bash
-python src/grouped_cv.py --data data/datafile.csv --output results
+python src/grouped_cv.py --data datafile.csv --output results
 ```
 
 ## What the script does
