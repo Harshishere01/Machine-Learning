@@ -1,48 +1,41 @@
-# Project-C: NFHS-5 Child-Marriage Analysis
+# District-level child-marriage prevalence in India (NFHS-5) - ML Application Assignment, Problem 23
 
-This folder contains a reproducible implementation of the **state-grouped cross-validation** experiment for district-level child-marriage prevalence.
+B.Sc. (H) Computer Science, Semester VI, University of Delhi.
+Target: % of women aged 20-24 married before age 18, for 706 districts (NFHS-5, 2019-21).
+Tasks: regression (prevalence) and classification (district above the all-India 23.3%).
 
-## Research target
-`Women age 20-24 years married before age 18 years (%)`
+## Repository layout
+```
+run_experiments.py     # cleaning, models, cross-validation, robustness checks -> results/
+build_paper.py         # builds the journal-format PDF from results/results.json
+requirements.txt
+data/datafile.csv      # NFHS-5 district indicators (put the supplied CSV here)
+results/               # created by run_experiments.py (results.json, CSV tables, figures/)
+Child_Marriage_ML_Paper.pdf
+```
 
-## Dataset
-Place the NFHS-5 district-level CSV at `datafile.csv`. The supplied dataset in this folder is the original `datafile.csv` provided for this project.
-
-## Setup
-```bash
-python -m venv .venv
-# Windows:
-.venv\\Scripts\\activate
-# macOS/Linux:
-source .venv/bin/activate
-
+## How to reproduce (about 10 minutes on a laptop)
+```
 pip install -r requirements.txt
+python run_experiments.py            # finds data/datafile.csv automatically, seed 42
+python build_paper.py                # writes Child_Marriage_ML_Paper.pdf
 ```
+You can also pass the file explicitly: `python run_experiments.py path/to/datafile.csv`.
+Edit the `STUDENT` block at the top of `build_paper.py` for name, college and supervisor.
 
-## Run
-From this folder:
-```bash
-python src/grouped_cv.py --data datafile.csv --output results
-```
+## What the code does
+1. Cleans the text-valued CSV: "(x)" = low-sample estimate (kept), "*" = suppressed (missing); drops columns with more than 40% missing and the survey-size columns.
+2. Imputes (median), winsorises (1st-99th percentile) and standardises inside a scikit-learn Pipeline, so nothing leaks from test data.
+3. Compares 9 regressors and 8 classifiers (+ a correlation-filter model) against mean and state-mean baselines; 5-fold grid-search CV on the 80% training split; 20% held-out test split.
+4. Robustness: state-grouped 5-fold CV (unseen states), leakage check without teenage-motherhood and birth-order indicators, a structural-only set, a focused schooling + wealth model, PCA, permutation importance, bootstrap intervals, per-state errors.
 
-## What the script does
-1. Loads the district-level data and normalises column names.
-2. Converts numeric columns; values in parentheses retain their numeric value and `*` is treated as missing.
-3. Excludes the target, sample-size/count columns, and predictors with more than 40% missing values.
-4. Uses **5-fold GroupKFold**, grouping by `State/UT`, so districts from a state cannot appear in both train and test partitions in the same fold.
-5. Fits median imputation and standardisation inside each model pipeline and therefore separately within each training fold.
-6. Evaluates Ridge Regression, RBF-SVR and Random Forest against a training-fold-mean baseline.
-7. Writes fold-level metrics, pooled out-of-fold predictions, summary metrics and an audit JSON file.
+## Main results (test split, seed 42)
+- Best regressor: SVR, RMSE 5.18 pp, R2 0.813 (state-mean baseline RMSE 8.36).
+- Best classifier: logistic regression, F1 0.862, AUC 0.941.
+- Unseen-state (grouped) CV: R2 about 0.70.
 
-## Generated files
-- `results/grouped_cv_fold_metrics.csv`
-- `results/grouped_cv_results.csv`
-- `results/grouped_cv_predictions.csv`
-- `results/grouped_cv_audit.json`
+## Use of AI tools
+[Write exactly what you did yourself and what the AI assistant did: for example, which code was generated, which parts you ran, changed, checked and can explain. Keep it truthful.]
 
-## Important interpretation
-The reported metrics are based on pooled out-of-fold predictions from unseen states. They are not directly interchangeable with random train/test split metrics. A lower grouped-CV R² is not automatically a defect: predicting districts in entirely unseen states is a harder generalisation task.
-
-## Reproducibility and scope
-This script is a clean, executable implementation of the grouped-validation experiment. It is **not claimed to regenerate every figure/table in the submitted paper**. The earlier `code.md`, paper and result files should be retained as historical submitted artifacts until every original analysis has been independently re-run and checked.
-
+## Data
+NFHS-5 (2019-21) district fact sheets, IIPS / MoHFW. See the paper's Data availability section for the source link.
